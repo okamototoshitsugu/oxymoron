@@ -20,13 +20,17 @@
     <div id="nav-content">
       <div class= "h_menu">
         <% if user_signed_in? %>
-        <p class= "h_text" ><%= link_to "MY_PAGE", users_user_path(current__user.id) %></p>
-        <p class= "h_text" ><%= link_to "LOG_OUT", destroy_user_session_path %></p>
+        <p class= "h_text"><%= link_to "MY_PAGE", users_user_path(current_user.id) %></p>
+        <p class= "h_text"><%= link_to "TASK_TREE", users_task_trees_path(current_user.id) %></p>
+        <p class= "h_text"><%= link_to "GRAPH", users_graph_path(current_user.id) %></p>
+        <p class= "h_text"><%= link_to "BOOKMARK", users_bookmark_index_path(current_user.id) %></p>
+        <p class= "h_text"><%= link_to "SHARE", users_shares_path(current_user.id) %></p>
+        <p class= "h_text"><%= link_to "LOG_OUT", destroy_user_session_path, method: :delete %></p>
         <% else %>
-        <p class= "h_text" ><%= link_to "TOP", root_path %></p>
-        <p class= "h_text" ><%= link_to "ABOUT", homes_about_path %></p>
-        <p class= "h_text" ><%= link_to "LOG_IN", new_user_session_path %></p>
-        <p class= "h_text" ><%= link_to "SIGN_UP", new_user_registration_path %></p>
+        <p class= "h_text"><%= link_to "TOP", root_path %></p>
+        <p class= "h_text"><%= link_to "ABOUT", homes_about_path %></p>
+        <p class= "h_text"><%= link_to "LOG_IN", new_user_session_path %></p>
+        <p class= "h_text"><%= link_to "SIGN_UP", new_user_registration_path %></p>
       </div>
     </div>
     <% end %>

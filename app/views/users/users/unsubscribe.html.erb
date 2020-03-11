@@ -1,0 +1,9 @@
+<h1>本当に退会しますか？</h1>
+<h3>
+	退会すると、会員情報や<br>
+	スケジュールが閲覧できなくなります。<br>
+	退会する場合は「退会する」をクリックして下さい。
+</h3>
+
+<%= link_to "退会しない", users_user_path(current_user.id) %>
+<%= link_to "退会する", users_user_path(current_user.id), data: { confirm: "本当に退会しますか?" }, method: :delete %>

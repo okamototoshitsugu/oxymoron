@@ -1,7 +1,7 @@
 //  新規登録画面
 .signin-box {
   width: 350px;
-  // height: 450px;
+  height: 540px;
   margin: 60px auto 0;
   border-radius: 4px;
   border: 1px #ddd solid;
@@ -19,6 +19,9 @@ h1 {
   padding-bottom: 4px;
   color: #111111;
 }
+.box-name {
+  margin-bottom: 13px;
+}
 
 .box-email {
   margin-bottom: 13px;
@@ -28,14 +31,14 @@ h1 {
   margin-bottom: 22px;
 }
 
-.login-box-email label, .box-password label {
+.login-box-email label, .box-password label, .box-name label {
   font-weight: 700;
   font-size: 13px;
   padding-left: 2px;
   padding-bottom: 2px;
 }
 
-.box-email input[type="email"], .box-password input[type="password"] {
+.box-email input[type="email"], .box-password input[type="password"], .box-name input[type="name"] {
   border-style: none;
   box-sizing: border-box;
   width: 100%;

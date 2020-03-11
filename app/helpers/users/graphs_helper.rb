@@ -1,0 +1,2 @@
+module Users::GraphsHelper
+end
