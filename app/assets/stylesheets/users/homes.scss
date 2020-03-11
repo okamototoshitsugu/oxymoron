@@ -1,0 +1,29 @@
+// Place all the styles related to the users::homes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@keyframes typing { from { width: 0; }
+}
+@keyframes caret { 50% { border-color: transparent; } }
+
+.title {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 100px;
+	margin-left: 37%;
+	margin-top: 150px;
+	width: 11ch;
+	border-right: .08em solid;
+	overflow: hidden;
+	font-size: 4em;
+	white-space: nowrap;
+	animation: typing 3s steps(11, end), caret .5s step-end infinite;
+}
+
+.top-login {
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.top-signup {
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+}
