@@ -10,7 +10,7 @@ Rails.application.routes.draw do
     get "users/unsubscribe"
 
   	resources :users, only: [:show, :edit, :update, :destroy, :withdraw]
-  	resources :task_trees, only: [:edit, :index, :new, :show, :uptate, :create, :destroy]
+  	resources :tasks
     resources :bookmark, only: [:index]
   	resources :graphs, only: [:show]
   	resources :shares, only: [:index]

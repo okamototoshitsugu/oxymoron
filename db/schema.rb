@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_11_095910) do
+ActiveRecord::Schema.define(version: 2020_03_15_085510) do
 
   create_table "graphs", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -22,21 +22,17 @@ ActiveRecord::Schema.define(version: 2020_03_11_095910) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "task_leafs", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "tasks", force: :cascade do |t|
     t.string "memo"
     t.integer "bookmark_status"
     t.integer "important_status"
     t.integer "share"
+    t.string "title"
+    t.integer "user_id"
     t.datetime "start_date_time"
     t.datetime "end_date_time"
-  end
-
-  create_table "task_trees", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "title"
   end
 
   create_table "users", force: :cascade do |t|

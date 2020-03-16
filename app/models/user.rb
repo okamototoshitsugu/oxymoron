@@ -4,8 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
   :recoverable, :rememberable, :validatable
 
-  has_many :task_trees
-  has_many :task_leaf
+  has_many :tasks
   has_many :graphs
 
    # 物理削除の代わりにユーザーの`deleted_at`をタイムスタンプで更新
