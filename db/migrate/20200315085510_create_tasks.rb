@@ -2,8 +2,7 @@ class CreateTasks < ActiveRecord::Migration[5.2]
   def change
     create_table :tasks do |t|
      t.string :memo
-     t.integer :bookmark_status
-     t.integer :important_status
+     t.integer :important_status, null: false, default: 0
      t.integer :share
      t.string :title
      t.integer :user_id

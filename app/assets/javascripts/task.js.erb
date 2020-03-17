@@ -1,22 +1,4 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, or any plugin's
-// vendor/assets/javascripts directory can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file. JavaScript code in this file should be added after the last require_* statement.
-//
-// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
-// about supported directives.
-//
-//= require rails-ujs
-//= require activestorage
-//= require turbolinks
-//= require_tree .
-//= require jquery
-//= require jquery_ujs
-//= require bootstrap-sprockets
+
 $(function() {
   // フォームカウント
   var frm_cnt = 0;
@@ -30,7 +12,7 @@ $(function() {
     frm_cnt++;
 
     original
-      .clone()
+      .clone(true)
       .hide()
       .insertAfter(original)
       .attr('id', 'form_block[' + frm_cnt + ']') // クローンのid属性を変更。
@@ -81,10 +63,15 @@ $(function() {
 // モーダル
 
 $(function(){
-    $('.js-modal-open').on('click',function(){
-        $('.js-modal').fadeIn();
-        return false;
-    });
+//     $('.js-modal-open').on('click',function(){
+//         $('.js-modal').fadeIn();
+//         return false;
+    // });
+    $('.js-modal-open').on('click', function() {
+    var btnIndex = $(this).index(); // 何番目のモーダルボタンかを取得
+    // alert(btnIndex)
+    $('.js-modal').eq(btnIndex).fadeIn(); // クリックしたモーダルボタンと同じ番目のモーダルを表示する
+  });
     $('.js-modal-close').on('click',function(){
         $('.js-modal').fadeOut();
         return false;
@@ -92,6 +79,28 @@ $(function(){
 });
 
 
+// カレンダー
+$(function(){
+  $('.datetimepicker').datetimepicker({
+    format : "YYYY/MM/DD HH:mm",
+    icons: {
+      time: "fa fa-clock-o",
+      date: "fa fa-calendar",
+      up: "fa fa-arrow-up",
+      down: "fa fa-arrow-down",
+      previous: "fa fa-arrow-left",
+      next: "fa fa-arrow-right"
+    }
+  });
+});
 
-
-
+// メモ
+$(function() {
+  var $textarea = $('#textarea');
+  var lineHeight = parseInt($textarea.css('lineHeight'));
+  $textarea.on('input', function(evt) {
+    var lines = ($(this).val() + '\n').match(/\n/g).length;
+    $(this).height(lineHeight * lines);
+  });
+  console.log($textarea)
+});

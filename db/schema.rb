@@ -24,8 +24,7 @@ ActiveRecord::Schema.define(version: 2020_03_15_085510) do
 
   create_table "tasks", force: :cascade do |t|
     t.string "memo"
-    t.integer "bookmark_status"
-    t.integer "important_status"
+    t.integer "important_status", default: 0, null: false
     t.integer "share"
     t.string "title"
     t.integer "user_id"
