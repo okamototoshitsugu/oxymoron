@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   namespace :users do
   	get 'homes/top'
   	get 'homes/about'
-    get "users/unsubscribe"
+    get 'users/unsubscribe'
 
   	resources :users, only: [:show, :edit, :update, :destroy, :withdraw]
   	resources :tasks

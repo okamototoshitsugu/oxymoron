@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 2020_03_15_085510) do
     t.integer "user_id"
     t.datetime "start_date_time"
     t.datetime "end_date_time"
+    t.integer "graphs_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

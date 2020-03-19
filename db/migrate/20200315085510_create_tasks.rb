@@ -8,6 +8,7 @@ class CreateTasks < ActiveRecord::Migration[5.2]
      t.integer :user_id
      t.datetime :start_date_time
      t.datetime :end_date_time
+     t.integer :graphs_id
      t.timestamps
     end
   end

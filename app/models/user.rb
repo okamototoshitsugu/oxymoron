@@ -5,7 +5,6 @@ class User < ApplicationRecord
   :recoverable, :rememberable, :validatable
 
   has_many :tasks
-  has_many :graphs
 
    # 物理削除の代わりにユーザーの`deleted_at`をタイムスタンプで更新
   def soft_delete
