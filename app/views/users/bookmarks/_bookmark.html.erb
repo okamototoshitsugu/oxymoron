@@ -1,0 +1,10 @@
+<% if task.bookmark_by?(current_user) %>
+<%= link_to users_task_bookmarks_path(task, redirect_id: 0), method: :delete, remote: true do %>
+
+<i class="fas fa-bookmark"></i>
+<% end %>
+<% else %>
+<%= link_to users_task_bookmarks_path(task, redirect_id: 0), method: :post, remote: true do %>
+<i class="far fa-bookmark"></i>
+<% end %>
+<% end %>

@@ -9,10 +9,15 @@ Rails.application.routes.draw do
   	get 'homes/about'
     get 'users/unsubscribe'
 
+  	resources :tasks do
+     resource :bookmarks, only: [:create, :destroy]
+    end
   	resources :users, only: [:show, :edit, :update, :destroy, :withdraw]
-  	resources :tasks
-    resources :bookmark, only: [:index]
   	resources :graphs, only: [:show]
   	resources :shares, only: [:index]
   end
 end
+
+
+
+

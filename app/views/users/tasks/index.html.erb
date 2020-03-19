@@ -3,6 +3,7 @@
 <div class="form-block">
   <!-- 中身 -->
   <h2 id="task-<%= task.id %>">
+    <p><%= render 'users/bookmarks/bookmark', task: task %></p>
     <div class="task-leaf">
       <p><%= task.title %></p>
       <p><%= task.start_date_time %></p>
@@ -14,7 +15,6 @@
   <div class="modal__bg js_modal-close"></div>
   <div class="modal__content">
     <%= form_with model: task, url: "/users/tasks/#{task.id}" do |f| %>
-    ブックマークボタン
     <p>
       <%= f.label :title, "TITLE" %>
       <%= f.text_field :title%>
@@ -44,7 +44,7 @@
  </p>
  <p>
   <%= f.label :memo, "MEMO" %>
-  <%= f.text_area  :memo %>
+  <%= f.text_area  :memo, id: "textarea" %>
 </p>
 <p>共有ボタン</p>
 <p><%= f.submit "登録"%></p>

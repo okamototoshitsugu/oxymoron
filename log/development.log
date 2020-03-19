@@ -35726,3 +35726,2364 @@ Processing by Users::GraphsController#show as HTML
 Completed 200 OK in 69ms (Views: 60.7ms | ActiveRecord: 1.1ms)
 
 
+Started GET "/users/users/1" for 10.0.2.2 at 2020-03-19 04:12:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Users::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:4
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered users/users/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 314ms (Views: 291.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/tasks.1" for 10.0.2.2 at 2020-03-19 04:12:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as 
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 118ms (Views: 82.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users/tasks.1" for 10.0.2.2 at 2020-03-19 04:14:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as 
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 112ms (Views: 87.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/tasks.1" for 10.0.2.2 at 2020-03-19 04:14:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as 
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 122ms (Views: 101.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/tasks.1" for 10.0.2.2 at 2020-03-19 04:15:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as 
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 122ms (Views: 93.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/tasks.1" for 10.0.2.2 at 2020-03-19 04:17:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as 
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 134ms (Views: 109.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/tasks.1" for 10.0.2.2 at 2020-03-19 04:17:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as 
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 133ms (Views: 110.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/tasks.1" for 10.0.2.2 at 2020-03-19 04:18:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as 
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 134ms (Views: 108.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 04:18:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 72ms (Views: 67.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 04:19:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 74ms (Views: 69.7ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/users/tasks/1" for 10.0.2.2 at 2020-03-19 04:21:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QA7pTz2scB+A05CPQS30fzoIpKfVNhGE41+my1NHLW36Pwbdz4DGaxvnLTasP7Eb3Yo+2Ej7oheT4CmL55bUaw==", "task"=>{"title"=>"test", "start_date_time"=>"2020/03/19 13:24", "end_date_time"=>"2020/04/01 13:21", "important_status"=>"重要×緊急", "memo"=>""}, "commit"=>"登録", "id"=>"1"}
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/tasks_controller.rb:26
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:26
+  [1m[36mTask Update (1.3ms)[0m  [1m[33mUPDATE "tasks" SET "start_date_time" = ?, "end_date_time" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["start_date_time", "2020-03-19 13:24:00"], ["end_date_time", "2020-04-01 13:21:00"], ["updated_at", "2020-03-19 04:21:36.603031"], ["id", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:26
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users/tasks_controller.rb:26
+Redirected to http://localhost:3000/users/tasks
+Completed 200 OK in 17ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 04:21:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 82ms (Views: 76.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 04:22:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 74ms (Views: 68.5ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/users/tasks/1" for 10.0.2.2 at 2020-03-19 04:23:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sc5fUc0hnwLSTL3gW9CkVVHeChK4uzE0Q6xfMVcNkU0L/7DDPw0pdkl4AFm2wuExtlyQbSV2gqczE9Bx49xoSw==", "task"=>{"title"=>"test", "start_date_time"=>"2020/03/19 13:24", "end_date_time"=>"2020/04/01 13:21", "important_status"=>"重要×緊急", "memo"=>"日程が変わるかもしれない"}, "commit"=>"登録", "id"=>"1"}
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/tasks_controller.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:26
+  [1m[36mTask Update (0.9ms)[0m  [1m[33mUPDATE "tasks" SET "memo" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["memo", "日程が変わるかもしれない"], ["updated_at", "2020-03-19 04:23:32.681538"], ["id", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:26
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users/tasks_controller.rb:26
+Redirected to http://localhost:3000/users/tasks
+Completed 200 OK in 9ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 04:23:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 69ms (Views: 63.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 04:23:39 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 78ms (Views: 74.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 04:24:57 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 80ms (Views: 75.4ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/users/tasks/1" for 10.0.2.2 at 2020-03-19 04:25:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NBvn2fQCGZdO/CLLzKaPSTs2T5dXOGX1AekCjWHz14+OKghLBi6v49XIn3IhtMot3LTV6Mr11mZxVo3N1SIuiQ==", "task"=>{"title"=>"test", "start_date_time"=>"2020/03/19 13:24", "end_date_time"=>"2020/04/01 13:21", "important_status"=>"重要×緊急", "memo"=>"日程が変わるかもしれない\n\n\n\naaaa"}, "commit"=>"登録", "id"=>"1"}
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/tasks_controller.rb:26
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:26
+  [1m[36mTask Update (1.1ms)[0m  [1m[33mUPDATE "tasks" SET "memo" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["memo", "日程が変わるかもしれない\n\n\n\naaaa"], ["updated_at", "2020-03-19 04:25:06.479392"], ["id", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:26
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users/tasks_controller.rb:26
+Redirected to http://localhost:3000/users/tasks
+Completed 200 OK in 11ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 04:25:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 72ms (Views: 66.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 04:25:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 74ms (Views: 69.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 04:25:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 77ms (Views: 71.1ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/users/tasks/1" for 10.0.2.2 at 2020-03-19 04:25:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"90WsJoTTN5F/hg9qZxH0bfY4zS2nFuJ0dpWxmpRs0kBNdEO0dv+B5eSystOKA7EJEbpXUjrbUecGKj7aIL0rRg==", "task"=>{"title"=>"test", "start_date_time"=>"2020/03/19 13:24", "end_date_time"=>"2020/04/01 13:21", "important_status"=>"重要×緊急", "memo"=>"日程が変わるかもしれない"}, "commit"=>"登録", "id"=>"1"}
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/tasks_controller.rb:26
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:26
+  [1m[36mTask Update (1.3ms)[0m  [1m[33mUPDATE "tasks" SET "memo" = ?, "updated_at" = ? WHERE "tasks"."id" = ?[0m  [["memo", "日程が変わるかもしれない"], ["updated_at", "2020-03-19 04:25:34.941154"], ["id", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:26
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users/tasks_controller.rb:26
+Redirected to http://localhost:3000/users/tasks
+Completed 200 OK in 13ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 04:25:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 78ms (Views: 72.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 04:25:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 76ms (Views: 70.4ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/users/tasks/1" for 10.0.2.2 at 2020-03-19 04:26:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#update as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sFsqWo/HOehF/pMgO6PWPGdUoNrV9zSKNtht07MQY/cKasXIfeuPnN7KLpnWsZNYgNY6pUg6hxlGZ+KTB8Ga8Q==", "task"=>{"title"=>"test", "start_date_time"=>"2020/03/19 13:24", "end_date_time"=>"2020/04/01 13:21", "important_status"=>"重要×緊急", "memo"=>"日程が変わるかもしれない"}, "commit"=>"登録", "id"=>"1"}
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:24
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/tasks_controller.rb:26
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:26
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users/tasks_controller.rb:26
+Redirected to http://localhost:3000/users/tasks
+Completed 200 OK in 9ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 04:26:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 73ms (Views: 68.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 04:26:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 80ms (Views: 75.1ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateBookMarks (20200319051446)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20200319051446_create_book_marks.rb:3
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "book_marks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "task_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200319051446_create_book_marks.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319051446"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20200305064152)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200305064152_devise_create_users.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20200305064152_devise_create_users.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20200305064152_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200305064152"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateShares (20200311051938)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "shares" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200311051938_create_shares.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200311051938"]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateGraphs (20200311081937)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "graphs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200311081937_create_graphs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200311081937"]]
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddDeletedAtColumnToUsers (20200311095910)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.9ms)[0m  [1m[35mALTER TABLE "users" ADD "deleted_at" datetime[0m
+  ↳ db/migrate/20200311095910_add_deleted_at_column_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200311095910"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateTasks (20200315085510)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "tasks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "memo" varchar, "important_status" integer DEFAULT 0 NOT NULL, "share" integer, "title" varchar, "user_id" integer, "start_date_time" datetime, "end_date_time" datetime, "graphs_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200315085510_create_tasks.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200315085510"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddBookMarksCountToTasks (20200319052303)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "tasks" ADD "book_marks_count" intege[0m
+  ↳ db/migrate/20200319052303_add_book_marks_count_to_tasks.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319052303"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-19 05:45:07.341573"], ["updated_at", "2020-03-19 05:45:07.341573"]]
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateBookmarks (20200319055210)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20200319055210_create_bookmarks.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "bookmarks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "task_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200319055210_create_bookmarks.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319055210"]]
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddBookmarksCountToTasks (20200319055711)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "tasks" ADD "bookmarks_count" integer[0m
+  ↳ db/migrate/20200319055711_add_bookmarks_count_to_tasks.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319055711"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 06:42:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Users::TasksController#index as HTML
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+
+ArgumentError - wrong number of arguments (given 0, expected 1):
+  app/models/task.rb:3:in `<class:Task>'
+  app/models/task.rb:1:in `<top (required)>'
+  app/controllers/users/tasks_controller.rb:3:in `index'
+
+Started POST "/__better_errors/8e3c87452ca7b1ea/variables" for 10.0.2.2 at 2020-03-19 06:42:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/__better_errors/8e3c87452ca7b1ea/variables" for 10.0.2.2 at 2020-03-19 06:42:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/__better_errors/8e3c87452ca7b1ea/variables" for 10.0.2.2 at 2020-03-19 06:42:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddBookmarksCountToTasks (20200319055711)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "atasks" ("id" integer NOT NULL PRIMARY KEY, "memo" varchar DEFAULT NULL, "important_status" integer DEFAULT 0 NOT NULL, "share" integer DEFAULT NULL, "title" varchar DEFAULT NULL, "user_id" integer DEFAULT NULL, "start_date_time" datetime DEFAULT NULL, "end_date_time" datetime DEFAULT NULL, "graphs_id" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "book_marks_count" integer DEFAULT NULL, "bookmarks_count" integer DEFAULT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "atasks" ("id","memo","important_status","share","title","user_id","start_date_time","end_date_time","graphs_id","created_at","updated_at","book_marks_count","bookmarks_count")
+                     SELECT "id","memo","important_status","share","title","user_id","start_date_time","end_date_time","graphs_id","created_at","updated_at","book_marks_count","bookmarks_count" FROM "tasks"[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mDROP TABLE "tasks"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "tasks" ("id" integer NOT NULL PRIMARY KEY, "memo" varchar DEFAULT NULL, "important_status" integer DEFAULT 0 NOT NULL, "share" integer DEFAULT NULL, "title" varchar DEFAULT NULL, "user_id" integer DEFAULT NULL, "start_date_time" datetime DEFAULT NULL, "end_date_time" datetime DEFAULT NULL, "graphs_id" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "book_marks_count" integer DEFAULT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "tasks" ("id","memo","important_status","share","title","user_id","start_date_time","end_date_time","graphs_id","created_at","updated_at","book_marks_count")
+                     SELECT "id","memo","important_status","share","title","user_id","start_date_time","end_date_time","graphs_id","created_at","updated_at","book_marks_count" FROM "atasks"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "atasks"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20200319055711"]]
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateBookmarks (20200319055210)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "bookmarks"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.5ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20200319055210"]]
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateTasks (20200315085510)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[35mDROP TABLE "tasks"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20200315085510"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateTasks (20200315085510)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20200315085510_create_tasks.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "tasks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "memo" varchar, "important_status" integer DEFAULT 0 NOT NULL, "share" integer, "title" varchar, "user_id" integer, "start_date_time" datetime, "end_date_time" datetime, "graphs_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200315085510_create_tasks.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200315085510"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateBookmarks (20200319055210)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "bookmarks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "task_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_c1ff6fa4ac"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_4599ccd22d"
+FOREIGN KEY ("task_id")
+  REFERENCES "tasks" ("id")
+)[0m
+  ↳ db/migrate/20200319055210_create_bookmarks.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_bookmarks_on_user_id" ON "bookmarks" ("user_id")[0m
+  ↳ db/migrate/20200319055210_create_bookmarks.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_bookmarks_on_task_id" ON "bookmarks" ("task_id")[0m
+  ↳ db/migrate/20200319055210_create_bookmarks.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200319055210"]]
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/ll" for 10.0.2.2 at 2020-03-19 06:58:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/ll"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 06:58:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+
+ArgumentError - wrong number of arguments (given 0, expected 1):
+  app/models/task.rb:3:in `<class:Task>'
+  app/models/task.rb:1:in `<top (required)>'
+  app/controllers/users/tasks_controller.rb:3:in `index'
+
+Started POST "/__better_errors/1dd74b21683b68b1/variables" for 10.0.2.2 at 2020-03-19 06:58:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:31:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 3688ms (Views: 3658.0ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/users/tasks" for 10.0.2.2 at 2020-03-19 07:32:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JPb5VrQQ6O8htFkBVw3+UxYETKX2+OJvyXETl1BfdEGexxbERjxem7qA5Li6H7s38YbW2ms1Ufy5zpzX5I6NRw==", "task"=>{"title"=>"test", "start_date_time"=>"2020/03/20 16:32", "end_date_time"=>"2020/03/21 16:32", "important_status"=>"重要×緊急", "memo"=>"test"}, "commit"=>"登録"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `id' for nil:NilClass:
+  app/controllers/users/tasks_controller.rb:11:in `create'
+
+Started POST "/__better_errors/697f913c62bd331f/variables" for 10.0.2.2 at 2020-03-19 07:32:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 10.0.2.2 at 2020-03-19 07:34:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::HomesController#top as HTML
+  Rendering users/homes/top.html.erb within layouts/application
+  Rendered users/homes/top.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 70ms (Views: 65.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/MVI_1449.mp4" for 10.0.2.2 at 2020-03-19 07:34:52 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/MVI_1449.mp4"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-03-19 07:34:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 76ms (Views: 70.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/MVI_1449.mp4" for 10.0.2.2 at 2020-03-19 07:34:55 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/users/MVI_1449.mp4"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/users" for 10.0.2.2 at 2020-03-19 07:35:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6xNoR2DvGDhmI6QCuRzmemdQPASePAQ5k6qfAC2NiNBIznQhz5TaPIFDcuNrsA9J5qCh1cf2e8k2q+6i0cGNHw==", "user"=>{"name"=>"岡本敏嗣", "email"=>"warld14tsugu@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+Unpermitted parameter: :name
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "warld14tsugu@gmail.com"], ["LIMIT", 1]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (2.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "warld14tsugu@gmail.com"], ["encrypted_password", "$2a$11$VESFAviu000UMMBavYCZcOU5luSYVqfth01SrhSQqQ/KNnGu.UPqa"], ["created_at", "2020-03-19 07:35:02.049727"], ["updated_at", "2020-03-19 07:35:02.049727"]]
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/users/tasks
+Completed 302 Found in 124ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:35:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.9ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 215ms (ActiveRecord: 1.1ms)
+
+
+
+NoMethodError - undefined method `users_user_path' for #<#<Class:0x000055d18cb236b8>:0x00007fc2741dce58>:
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb___3042651129828399523_70236574213660'
+
+Started POST "/__better_errors/d95927713358b356/variables" for 10.0.2.2 at 2020-03-19 07:35:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/ll" for 10.0.2.2 at 2020-03-19 07:35:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/ll"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:36:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 319ms (ActiveRecord: 0.5ms)
+
+
+
+NoMethodError - undefined method `users_graph_path' for #<#<Class:0x000055d18cb236b8>:0x00007fc2893a5270>:
+  app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb___3042651129828399523_70236751732480'
+
+Started POST "/__better_errors/a7feec7baf3d50e1/variables" for 10.0.2.2 at 2020-03-19 07:36:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:36:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 283ms (ActiveRecord: 0.6ms)
+
+
+
+NoMethodError - undefined method `users_shares_path' for #<#<Class:0x000055d18cb236b8>:0x00007fc28980aa90>:
+  app/views/layouts/application.html.erb:30:in `_app_views_layouts_application_html_erb___3042651129828399523_70236753732120'
+
+Started POST "/__better_errors/3365bc529f56a66e/variables" for 10.0.2.2 at 2020-03-19 07:36:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/ll" for 10.0.2.2 at 2020-03-19 07:38:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/ll"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:39:37 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 461ms (ActiveRecord: 4.9ms)
+
+
+
+NoMethodError - undefined method `users_shares_path' for #<#<Class:0x000055c6c7d0e768>:0x000055c6c7d60b80>:
+  app/views/layouts/application.html.erb:30:in `_app_views_layouts_application_html_erb___274820976476062066_47156122512620'
+
+Started GET "/ll" for 10.0.2.2 at 2020-03-19 07:39:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/ll"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ll" for 10.0.2.2 at 2020-03-19 07:41:03 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/ll"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ll" for 10.0.2.2 at 2020-03-19 07:41:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/ll"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/ll" for 10.0.2.2 at 2020-03-19 07:42:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/ll"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:44:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.6ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 500ms (ActiveRecord: 4.6ms)
+
+
+
+NoMethodError - undefined method `users_bookmark_index_path' for #<#<Class:0x000055dc099fe378>:0x000055dc09a58990>:
+  app/views/layouts/application.html.erb:29:in `_app_views_layouts_application_html_erb__2662199986148200327_47201771799080'
+
+Started POST "/__better_errors/c4cd39500fc6a12e/variables" for 10.0.2.2 at 2020-03-19 07:44:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:44:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 246ms (ActiveRecord: 0.6ms)
+
+
+
+NoMethodError - undefined method `users_bookmarks_index_path' for #<#<Class:0x000055dc099fe378>:0x00007fa15e434868>:
+  app/views/layouts/application.html.erb:29:in `_app_views_layouts_application_html_erb__2662199986148200327_70165523915540'
+
+Started POST "/__better_errors/616abe0042e68cd2/variables" for 10.0.2.2 at 2020-03-19 07:44:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/ll" for 10.0.2.2 at 2020-03-19 07:45:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/ll"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ll" for 10.0.2.2 at 2020-03-19 07:45:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/ll"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ll" for 10.0.2.2 at 2020-03-19 07:48:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/ll"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:49:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 275ms (ActiveRecord: 4.3ms)
+
+
+
+NoMethodError - undefined method `users_users_path' for #<#<Class:0x00007fa145413438>:0x00007fa1454118b8>:
+  app/views/layouts/application.html.erb:26:in `_app_views_layouts_application_html_erb__2662199986148200327_70165524376380'
+
+Started POST "/__better_errors/a15820f1bd9fc147/variables" for 10.0.2.2 at 2020-03-19 07:49:06 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:49:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 0.6ms)
+
+
+
+NoMethodError - undefined method `users_graphs_path' for #<#<Class:0x00007fa145413438>:0x00007fa15dffe9d8>:
+  app/views/layouts/application.html.erb:28:in `_app_views_layouts_application_html_erb__2662199986148200327_70165521747640'
+
+Started POST "/__better_errors/5e59c4744a34d14b/variables" for 10.0.2.2 at 2020-03-19 07:49:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:49:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 252ms (ActiveRecord: 0.6ms)
+
+
+
+NoMethodError - undefined method `users_bookmarks_index_path' for #<#<Class:0x00007fa145413438>:0x00007fa15dbba200>:
+  app/views/layouts/application.html.erb:29:in `_app_views_layouts_application_html_erb__2662199986148200327_70165519484880'
+
+Started POST "/__better_errors/1c1046c83463375f/variables" for 10.0.2.2 at 2020-03-19 07:49:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/ll" for 10.0.2.2 at 2020-03-19 07:50:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/ll"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/ll" for 10.0.2.2 at 2020-03-19 07:50:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/ll"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:50:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 225ms (ActiveRecord: 0.4ms)
+
+
+
+NoMethodError - undefined method `users_bookmark_index_path' for #<#<Class:0x00007fa145413438>:0x00007fa144a90938>:
+  app/views/layouts/application.html.erb:29:in `_app_views_layouts_application_html_erb__2662199986148200327_70165519120280'
+
+Started POST "/__better_errors/84f1578b25e0956f/variables" for 10.0.2.2 at 2020-03-19 07:50:44 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:51:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 79ms (Views: 73.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users/tasks" for 10.0.2.2 at 2020-03-19 07:51:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FG1I2OZhdFM7dWBvwFaDHGiDL168bD5sBZ3PtWjH+8euXKdKFE3CJ6BB3dYtRMZ4jwG1ISGhjf91IkD13BYCwQ==", "task"=>{"title"=>"test", "start_date_time"=>"2020/03/20 16:51", "end_date_time"=>"2020/03/21 16:51", "important_status"=>"重要×緊急", "memo"=>"test"}, "commit"=>"登録"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:11
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/tasks_controller.rb:13
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:13
+  [1m[36mTask Create (1.9ms)[0m  [1m[32mINSERT INTO "tasks" ("memo", "important_status", "title", "user_id", "start_date_time", "end_date_time", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["memo", "test"], ["important_status", 1], ["title", "test"], ["user_id", 1], ["start_date_time", "2020-03-20 16:51:00"], ["end_date_time", "2020-03-21 16:51:00"], ["created_at", "2020-03-19 07:51:25.079648"], ["updated_at", "2020-03-19 07:51:25.079648"]]
+  ↳ app/controllers/users/tasks_controller.rb:13
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users/tasks_controller.rb:13
+Redirected to http://localhost:3000/users/tasks
+Completed 302 Found in 22ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:51:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.0ms)
+
+
+
+ActionView::MissingTemplate - Missing partial bookmarks/_bookmark with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/vagrant/oxymoron/app/views"
+  * "/var/lib/gems/2.5.0/gems/devise-4.7.1/app/views"
+:
+  app/views/users/tasks/index.html.erb:7:in `block in _app_views_users_tasks_index_html_erb__2745870829140760909_70165524157260'
+  app/views/users/tasks/index.html.erb:2:in `_app_views_users_tasks_index_html_erb__2745870829140760909_70165524157260'
+
+Started POST "/__better_errors/4bb9e94970933447/variables" for 10.0.2.2 at 2020-03-19 07:51:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:53:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.6ms)
+
+
+
+ActionView::MissingTemplate - Missing partial bookmarks/_bookmark with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/vagrant/oxymoron/app/views"
+  * "/var/lib/gems/2.5.0/gems/devise-4.7.1/app/views"
+:
+  app/views/users/tasks/index.html.erb:7:in `block in _app_views_users_tasks_index_html_erb__2745870829140760909_70165529722900'
+  app/views/users/tasks/index.html.erb:2:in `_app_views_users_tasks_index_html_erb__2745870829140760909_70165529722900'
+
+Started POST "/__better_errors/24929dedf70d5219/variables" for 10.0.2.2 at 2020-03-19 07:53:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:54:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.6ms)
+
+
+
+ActionView::MissingTemplate - Missing partial bookmarks/_bookmark with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/vagrant/oxymoron/app/views"
+  * "/var/lib/gems/2.5.0/gems/devise-4.7.1/app/views"
+:
+  app/views/users/tasks/index.html.erb:7:in `block in _app_views_users_tasks_index_html_erb__2745870829140760909_70165522158480'
+  app/views/users/tasks/index.html.erb:2:in `_app_views_users_tasks_index_html_erb__2745870829140760909_70165522158480'
+
+Started POST "/__better_errors/f42b164aa037e439/variables" for 10.0.2.2 at 2020-03-19 07:54:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:55:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/bookmarks/_bookmark.html.erb (125.0ms)
+  Rendered users/tasks/index.html.erb within layouts/application (130.5ms)
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 0.8ms)
+
+
+
+NameError - undefined local variable or method `task' for #<#<Class:0x00007fa145413438>:0x00007fa15ef20038>:
+  app/views/users/bookmarks/_bookmark.html.erb:1:in `_app_views_users_bookmarks__bookmark_html_erb__2365438867637332096_70165528963600'
+  app/views/users/tasks/index.html.erb:7:in `block in _app_views_users_tasks_index_html_erb__2745870829140760909_70165529692060'
+  app/views/users/tasks/index.html.erb:2:in `_app_views_users_tasks_index_html_erb__2745870829140760909_70165529692060'
+
+Started POST "/__better_errors/15b4c4f2d91ebb94/variables" for 10.0.2.2 at 2020-03-19 07:55:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:56:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/bookmarks/_bookmark.html.erb (149.1ms)
+  Rendered users/tasks/index.html.erb within layouts/application (152.8ms)
+Completed 500 Internal Server Error in 161ms (ActiveRecord: 0.5ms)
+
+
+
+NameError - undefined local variable or method `task' for #<#<Class:0x00007fa145413438>:0x00007fa15df65eb8>:
+  app/views/users/bookmarks/_bookmark.html.erb:1:in `_app_views_users_bookmarks__bookmark_html_erb__2365438867637332096_70165520696200'
+  app/views/users/tasks/index.html.erb:7:in `block in _app_views_users_tasks_index_html_erb__2745870829140760909_70165521447320'
+  app/views/users/tasks/index.html.erb:2:in `_app_views_users_tasks_index_html_erb__2745870829140760909_70165521447320'
+
+Started POST "/__better_errors/57961f652aded752/variables" for 10.0.2.2 at 2020-03-19 07:56:50 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:57:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/bookmarks/_bookmark.html.erb (162.2ms)
+  Rendered users/tasks/index.html.erb within layouts/application (165.7ms)
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 0.6ms)
+
+
+
+NameError - undefined local variable or method `tasks' for #<#<Class:0x00007fa145413438>:0x00007fa15e0b2730>:
+  app/views/users/bookmarks/_bookmark.html.erb:1:in `_app_views_users_bookmarks__bookmark_html_erb__2365438867637332096_70165522011300'
+  app/views/users/tasks/index.html.erb:7:in `block in _app_views_users_tasks_index_html_erb__2745870829140760909_70165522127020'
+  app/views/users/tasks/index.html.erb:2:in `_app_views_users_tasks_index_html_erb__2745870829140760909_70165522127020'
+
+Started POST "/__better_errors/1795710ff5111dce/variables" for 10.0.2.2 at 2020-03-19 07:57:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:58:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/tasks/index.html.erb within layouts/application (156.0ms)
+Completed 500 Internal Server Error in 163ms (ActiveRecord: 0.5ms)
+
+
+
+NameError - undefined local variable or method `book' for #<#<Class:0x00007fa145413438>:0x000055dc09c41590>:
+  app/views/users/tasks/index.html.erb:7:in `block in _app_views_users_tasks_index_html_erb__2745870829140760909_47201772539220'
+  app/views/users/tasks/index.html.erb:2:in `_app_views_users_tasks_index_html_erb__2745870829140760909_47201772539220'
+
+Started POST "/__better_errors/05d97fe55782671c/variables" for 10.0.2.2 at 2020-03-19 07:58:11 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 07:58:33 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/bookmarks/_bookmark.html.erb (160.4ms)
+  Rendered users/tasks/index.html.erb within layouts/application (164.2ms)
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 0.5ms)
+
+
+
+NameError - undefined local variable or method `task' for #<#<Class:0x00007fa145413438>:0x00007fa1459fc020>:
+  app/views/users/bookmarks/_bookmark.html.erb:1:in `_app_views_users_bookmarks__bookmark_html_erb__2365438867637332096_70165317022040'
+  app/views/users/tasks/index.html.erb:7:in `block in _app_views_users_tasks_index_html_erb__2745870829140760909_70165317281060'
+  app/views/users/tasks/index.html.erb:2:in `_app_views_users_tasks_index_html_erb__2745870829140760909_70165317281060'
+
+Started POST "/__better_errors/9113a48428c317d6/variables" for 10.0.2.2 at 2020-03-19 07:58:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/__better_errors/9113a48428c317d6/variables" for 10.0.2.2 at 2020-03-19 07:58:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started POST "/__better_errors/9113a48428c317d6/variables" for 10.0.2.2 at 2020-03-19 07:58:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 08:01:53 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/bookmarks/_bookmark.html.erb (150.6ms)
+  Rendered users/tasks/index.html.erb within layouts/application (155.6ms)
+Completed 500 Internal Server Error in 164ms (ActiveRecord: 0.8ms)
+
+
+
+NameError - undefined local variable or method `task' for #<#<Class:0x00007fa145413438>:0x00007fa1453cb098>:
+  app/views/users/bookmarks/_bookmark.html.erb:1:in `_app_views_users_bookmarks__bookmark_html_erb__2365438867637332096_70165529553960'
+  app/views/users/tasks/index.html.erb:7:in `block in _app_views_users_tasks_index_html_erb__2745870829140760909_70165314035180'
+  app/views/users/tasks/index.html.erb:2:in `_app_views_users_tasks_index_html_erb__2745870829140760909_70165314035180'
+
+Started POST "/__better_errors/95c6847ca59e419e/variables" for 10.0.2.2 at 2020-03-19 08:01:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 08:01:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/bookmarks/_bookmark.html.erb (160.8ms)
+  Rendered users/tasks/index.html.erb within layouts/application (165.7ms)
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 0.6ms)
+
+
+
+NameError - undefined local variable or method `task' for #<#<Class:0x00007fa145413438>:0x00007fa15e24cd98>:
+  app/views/users/bookmarks/_bookmark.html.erb:1:in `_app_views_users_bookmarks__bookmark_html_erb__2365438867637332096_70165522702400'
+  app/views/users/tasks/index.html.erb:7:in `block in _app_views_users_tasks_index_html_erb__2745870829140760909_70165522967620'
+  app/views/users/tasks/index.html.erb:2:in `_app_views_users_tasks_index_html_erb__2745870829140760909_70165522967620'
+
+Started POST "/__better_errors/25f201189acb7098/variables" for 10.0.2.2 at 2020-03-19 08:02:00 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 08:07:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  Rendered users/bookmarks/_bookmark.html.erb (4.3ms)
+  Rendered users/tasks/index.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.5ms)
+
+
+
+NoMethodError - undefined method `bookmarked_by?' for #<Task:0x00007fa15d5917e8>:
+  app/views/users/bookmarks/_bookmark.html.erb:1:in `_app_views_users_bookmarks__bookmark_html_erb__2365438867637332096_70165516276640'
+  app/views/users/tasks/index.html.erb:7:in `block in _app_views_users_tasks_index_html_erb__2745870829140760909_70165516554180'
+  app/views/users/tasks/index.html.erb:2:in `_app_views_users_tasks_index_html_erb__2745870829140760909_70165516554180'
+
+Started POST "/__better_errors/5351c581a422ff01/variables" for 10.0.2.2 at 2020-03-19 08:07:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 08:12:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (161.7ms)
+  Rendered users/tasks/index.html.erb within layouts/application (168.5ms)
+Completed 500 Internal Server Error in 211ms (ActiveRecord: 3.6ms)
+
+
+
+NoMethodError - undefined method `task_bookmarks_path' for #<#<Class:0x0000557d9c36b338>:0x0000557d9c33dcd0>:
+  app/views/users/bookmarks/_bookmark.html.erb:7:in `_app_views_users_bookmarks__bookmark_html_erb___544980213718189903_46998989417800'
+  app/views/users/tasks/index.html.erb:7:in `block in _app_views_users_tasks_index_html_erb__314337319654157139_46998990088040'
+  app/views/users/tasks/index.html.erb:2:in `_app_views_users_tasks_index_html_erb__314337319654157139_46998990088040'
+
+Started POST "/__better_errors/f0a638686c5fb38b/variables" for 10.0.2.2 at 2020-03-19 08:12:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/ll" for 10.0.2.2 at 2020-03-19 08:20:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/ll"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+request_store (1.5.0) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 08:20:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (132.3ms)
+  Rendered users/tasks/index.html.erb within layouts/application (138.0ms)
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 6.1ms)
+
+
+
+NoMethodError - undefined method `task_bookmarks_path' for #<#<Class:0x0000563829f629a0>:0x0000563829f33538>:
+  app/views/users/bookmarks/_bookmark.html.erb:7:in `_app_views_users_bookmarks__bookmark_html_erb__4109366857543005931_47399611556420'
+  app/views/users/tasks/index.html.erb:7:in `block in _app_views_users_tasks_index_html_erb___629612831766390907_47399610914600'
+  app/views/users/tasks/index.html.erb:2:in `_app_views_users_tasks_index_html_erb___629612831766390907_47399610914600'
+
+Started POST "/__better_errors/2055125954007308/variables" for 10.0.2.2 at 2020-03-19 08:20:42 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 08:21:27 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (3.2ms)
+  Rendered users/tasks/index.html.erb within layouts/application (30.6ms)
+Completed 500 Internal Server Error in 503ms (ActiveRecord: 1.2ms)
+
+
+
+NoMethodError - undefined method `users_bookmarks_path' for #<#<Class:0x0000563829f629a0>:0x0000563828f735a8>:
+  app/views/layouts/application.html.erb:29:in `_app_views_layouts_application_html_erb___2531937361540112828_47399602416820'
+
+Started POST "/__better_errors/a58c96c296a2f1bb/variables" for 10.0.2.2 at 2020-03-19 08:21:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 08:26:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.5ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (5.2ms)
+  Rendered users/tasks/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 92ms (Views: 70.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 08:29:13 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (2.3ms)
+  Rendered users/tasks/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 84ms (Views: 78.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 08:30:18 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (3.2ms)
+  Rendered users/tasks/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 74ms (Views: 69.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 08:30:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (2.7ms)
+  Rendered users/tasks/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 84ms (Views: 78.5ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 08:30:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007f3a88273480>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 08:30:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 156ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x0000563829eda6e0>:
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 08:33:47 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (2.7ms)
+  Rendered users/tasks/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 81ms (Views: 76.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 08:33:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007f3a89906508>:
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 08:34:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (3.5ms)
+  [1m[36mCACHE Bookmark Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (2.0ms)
+  Rendered users/tasks/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 117ms (Views: 111.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 08:34:16 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007f3a89c9c118>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 08:34:17 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007f3a8aaa0fe8>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 08:34:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007f3a8abcdc18>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 08:34:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007f3a89e11020>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 08:34:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x0000563827df8d50>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 08:34:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 85ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x0000563828fbc528>:
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 10:45:07 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /var/lib/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (10.6ms)
+  Rendered users/tasks/index.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 356ms (Views: 317.5ms | ActiveRecord: 4.7ms)
+
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:45:09 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 117ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa80006d4e8>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:45:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 211ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa815349828>:
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 10:45:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (1.6ms)
+  Rendered users/tasks/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 80ms (Views: 75.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 10:46:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (1.7ms)
+  [1m[36mCACHE Bookmark Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (1.0ms)
+  Rendered users/tasks/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 75ms (Views: 69.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:46:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 137ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa814c27928>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:46:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa811504838>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:46:14 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x0000562605be88f0>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:46:15 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa81dbfdca0>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:46:20 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa815d102d0>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:46:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa81c4c0c68>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:46:22 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa811dabf18>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:46:23 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 76ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa81042e630>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:46:24 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa816217d28>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:46:25 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 126ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x0000562604418f40>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:46:26 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 72ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa81d99fd78>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:46:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa81622f428>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:46:29 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa814af8f98>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:46:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa810da42f0>:
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:46:31 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa81c92d1e8>:
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 10:46:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (2.3ms)
+  [1m[36mCACHE Bookmark Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (1.5ms)
+  Rendered users/tasks/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 89ms (Views: 82.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:47:08 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 216ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x0000562605446a48>:
+
+Started GET "/users/tasks" for 10.0.2.2 at 2020-03-19 10:48:04 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (2.2ms)
+  Rendered users/tasks/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 76ms (Views: 70.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users/tasks/1/bookmarks?redirect_id=0" for 10.0.2.2 at 2020-03-19 10:48:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::BookmarksController#create as JS
+  Parameters: {"redirect_id"=>"0", "task_id"=>"1"}
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 0.0ms)
+
+
+
+NoMethodError - undefined method `set_variables' for #<Users::BookmarksController:0x00007fa816270bf8>:
+
+Started GET "/users/graphs/1" for 10.0.2.2 at 2020-03-19 10:48:32 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::GraphsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/graphs_controller.rb:3
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."important_status" = ?[0m  [["important_status", 1]]
+  ↳ app/controllers/users/graphs_controller.rb:5
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."important_status" = ?[0m  [["important_status", 2]]
+  ↳ app/controllers/users/graphs_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."important_status" = ?[0m  [["important_status", 3]]
+  ↳ app/controllers/users/graphs_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."important_status" = ?[0m  [["important_status", 4]]
+  ↳ app/controllers/users/graphs_controller.rb:11
+  Rendering users/graphs/show.html.erb within layouts/application
+  Rendered users/graphs/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 71ms (Views: 60.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/graphs/1" for 10.0.2.2 at 2020-03-19 10:48:36 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::GraphsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/graphs_controller.rb:3
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."important_status" = ?[0m  [["important_status", 1]]
+  ↳ app/controllers/users/graphs_controller.rb:5
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."important_status" = ?[0m  [["important_status", 2]]
+  ↳ app/controllers/users/graphs_controller.rb:7
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."important_status" = ?[0m  [["important_status", 3]]
+  ↳ app/controllers/users/graphs_controller.rb:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "tasks" WHERE "tasks"."important_status" = ?[0m  [["important_status", 4]]
+  ↳ app/controllers/users/graphs_controller.rb:11
+  Rendering users/graphs/show.html.erb within layouts/application
+  Rendered users/graphs/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 65ms (Views: 55.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/shares.1" for 10.0.2.2 at 2020-03-19 10:48:43 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::SharesController#index as 
+  Rendering users/shares/index.html.erb within layouts/application
+  Rendered users/shares/index.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 120ms (Views: 85.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/users/1" for 10.0.2.2 at 2020-03-19 10:48:45 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:4
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered users/users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 67ms (Views: 57.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/users/1/edit" for 10.0.2.2 at 2020-03-19 10:48:49 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:8
+  Rendering users/users/edit.html.erb within layouts/application
+  Rendered users/users/edit.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:25
+Completed 200 OK in 67ms (Views: 59.3ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/users/users/1" for 10.0.2.2 at 2020-03-19 10:48:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SZzMPSaBHVi8qBRnDB43dv7BGMQI1Z0rre15Q6U1kFOFpDU8LylbIZoxkUZU1wiYmDtnDXGBYoTU1YAT7obA/Q==", "user"=>{"name"=>"岡本敏嗣", "email"=>"warld14tsugu@gmail.com"}, "commit"=>"編集内容を保存する", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/users_controller.rb:14
+  [1m[36mUser Update (2.2ms)[0m  [1m[33mUPDATE "users" SET "name" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["name", "岡本敏嗣"], ["updated_at", "2020-03-19 10:48:51.640213"], ["id", 1]]
+  ↳ app/controllers/users/users_controller.rb:14
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users/users_controller.rb:14
+Redirected to http://localhost:3000/users/users/1
+Completed 302 Found in 11ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/users/users/1" for 10.0.2.2 at 2020-03-19 10:48:51 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:4
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered users/users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 61ms (Views: 56.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/users/1" for 10.0.2.2 at 2020-03-19 10:48:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:4
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered users/users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 73ms (Views: 66.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/tasks.1" for 10.0.2.2 at 2020-03-19 10:48:56 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as 
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (2.1ms)
+  Rendered users/tasks/index.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 146ms (Views: 107.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/users/1" for 10.0.2.2 at 2020-03-19 10:48:59 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:4
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered users/users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 62ms (Views: 56.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/tasks.1" for 10.0.2.2 at 2020-03-19 10:49:02 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::TasksController#index as 
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/tasks_controller.rb:5
+  Rendering users/tasks/index.html.erb within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/views/users/tasks/index.html.erb:2
+  [1m[36mBookmark Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "bookmarks" WHERE "bookmarks"."task_id" = ? AND "bookmarks"."user_id" = ? LIMIT ?[0m  [["task_id", 1], ["user_id", 1], ["LIMIT", 1]]
+  ↳ app/models/task.rb:5
+  Rendered users/bookmarks/_bookmark.html.erb (1.7ms)
+  Rendered users/tasks/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 105ms (Views: 84.0ms | ActiveRecord: 0.8ms)
+
+

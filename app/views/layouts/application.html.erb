@@ -26,7 +26,8 @@
           <p class= "h_text"><%= link_to "MY_PAGE", users_user_path(current_user.id) %></p>
           <p class= "h_text"><%= link_to "TASK_TREE", users_tasks_path(current_user.id) %></p>
           <p class= "h_text"><%= link_to "GRAPH", users_graph_path(current_user.id) %></p>
-          <p class= "h_text"><%= link_to "BOOKMARK", users_bookmark_index_path(current_user.id) %></p>
+          <!-- URL変更 -->
+          <p class= "h_text"><%= link_to "BOOKMARK", users_graph_path(current_user.id) %></p>
           <p class= "h_text"><%= link_to "SHARE", users_shares_path(current_user.id) %></p>
           <p class= "h_text"><%= link_to "LOG_OUT", destroy_user_session_path, method: :delete %></p>
           <% else %>
