@@ -1,0 +1,47 @@
+.mypage-edit {
+	text-align: center;
+  margin-top: 100px;
+}
+.mypage-edit-box {
+	border-radius: 10px;
+	border: 3px #ddd solid;
+	margin: 60px auto 0;
+	width: 350px;
+  height: 225px;
+}
+.withdrawal-button{
+  display: inline-block;
+  background-color: #F44336;/*背景色*/
+  font-size: 1em;/*文字サイズ*/
+  line-height: 1;
+  text-decoration: none;
+  letter-spacing: 0.05em;/*字間*/
+  padding: 0.2em 1em;/*ボタン内の余白*/
+  border-radius: 3px;/*角の丸み*/
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);/*影*/
+  -webkit-tap-highlight-color: transparent;
+  transition: .3s ease-out;/*変化を緩やかに*/
+  margin-top: 20px;
+}
+
+.withdrawal-button:hover{
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);/*浮き上がるように*/
+  }
+  .radius-pixel-30 {
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+  .mypage-edit-box-item {
+    margin: 20px;
+    margin-top: 55px;
+  }
+  .mypage-edit-box-item-2 {
+    margin: 20px;
+  }
+  input[type="text"] {
+    width: 200px;
+    height: 40px;
+    font-size: 17px;
+  }
+

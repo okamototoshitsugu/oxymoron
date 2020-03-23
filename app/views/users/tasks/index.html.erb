@@ -2,53 +2,65 @@
 <% @tasks.each do |task| %>
 <div class="form-block">
   <!-- 中身 -->
+  <div class="bookmark">
+    <%= render 'users/bookmarks/bookmark', task: task %>
+  </div>
+  <div class="deletebutton-position">
+    <p id="deletebutton">
+      <%= link_to users_task_path(task), data: { confirm: "削除しますか？" }, method: :delete do %>
+      <i class="fas fa-minus"></i>
+      <% end %>
+    </p>
+  </div>
   <h2 id="task-<%= task.id %>">
-    <p><%= render 'users/bookmarks/bookmark', task: task %></p>
     <div class="task-leaf">
       <p><%= task.title %></p>
       <p><%= task.start_date_time %></p>
     </div>
   </h2>
-
 </div>
 <div class="modal js_modal" id="modal-task-<%= task.id %>">
   <div class="modal__bg js_modal-close"></div>
   <div class="modal__content">
+    <div class="modal-bookmark">
+      <%= render 'users/bookmarks/bookmark', task: task %>
+    </div>
     <%= form_with model: task, url: "/users/tasks/#{task.id}" do |f| %>
-    <p>
-      <%= f.label :title, "TITLE" %>
-      <%= f.text_field :title%>
-    </p>
-    <p>場所</p>
-    <p>
-      <%= f.label :start_date_time, "START" %>
+    <div class="modal-content">
+      <p>
+        <%= f.label :title, "TITLE" %>
+        <%= f.text_field :title%>
+      </p>
+      <p>場所</p>
+      <p>
+        <%= f.label :start_date_time, "START" %>
+        <div class='input-group date datetimepicker'>
+          <%= f.text_field :start_date_time, class: 'form-control' %>
+          <span class="input-group-addon">
+           <span class="fa fa-calendar"></span>
+         </span>
+       </div>
+     </p>
+     <p>
+      <%= f.label :end_date_time, "FINISH" %>
       <div class='input-group date datetimepicker'>
-        <%= f.text_field :start_date_time, class: 'form-control' %>
+        <%= f.text_field :end_date_time, class: 'form-control' %>
         <span class="input-group-addon">
          <span class="fa fa-calendar"></span>
        </span>
      </div>
    </p>
    <p>
-    <%= f.label :end_date_time, "FINISH" %>
-    <div class='input-group date datetimepicker'>
-      <%= f.text_field :end_date_time, class: 'form-control' %>
-      <span class="input-group-addon">
-       <span class="fa fa-calendar"></span>
-     </span>
-   </div>
- </p>
- <p>
-   <%= f.label :important_status, "STATUS" %>
-   <%= f.select :important_status, Task.important_statuses.keys, {} %>
- </p>
- <p>
-  <%= f.label :memo, "MEMO" %>
-  <%= f.text_area  :memo, id: "textarea" %>
-</p>
-<p>共有ボタン</p>
-<p><%= f.submit "登録"%></p>
-<% end %>
+     <%= f.label :important_status, "STATUS" %>
+     <%= f.select :important_status, Task.important_statuses.keys, {} %>
+   </p>
+   <p>
+    <%= f.label :memo, "MEMO" %>
+    <%= f.text_area  :memo, id: "textarea" %>
+  </p>
+  <p><%= f.submit "登録"%></p>
+  <% end %>
+</div>
 </div>
 </div>
 <% end %>
@@ -71,68 +83,71 @@
   <div class="modal__bg js-modal-close"></div>
   <div class="modal__content">
     <%= form_for(@task,url: users_tasks_path, method: :post) do |f| %>
-    ブックマークボタン
-    <p>
-      <%= f.label :title, "TITLE" %>
-      <%= f.text_field :title%>
-    </p>
-    <p>場所</p>
-    <p>
-      <%= f.label :start_date_time, "START" %>
+    <div class="modal-content">
+      <p>
+        <%= f.label :title, "TITLE" %>
+        <%= f.text_field :title%>
+      </p>
+      <p>場所</p>
+      <p>
+        <%= f.label :start_date_time, "START" %>
+        <div class='input-group date datetimepicker'>
+          <%= f.text_field :start_date_time, class: 'form-control' %>
+          <span class="input-group-addon">
+           <span class="fa fa-calendar"></span>
+         </span>
+       </div>
+     </p>
+     <p>
+      <%= f.label :end_date_time, "FINISH" %>
       <div class='input-group date datetimepicker'>
-        <%= f.text_field :start_date_time, class: 'form-control' %>
+        <%= f.text_field :end_date_time, class: 'form-control' %>
         <span class="input-group-addon">
          <span class="fa fa-calendar"></span>
        </span>
      </div>
    </p>
    <p>
-    <%= f.label :end_date_time, "FINISH" %>
-    <div class='input-group date datetimepicker'>
-      <%= f.text_field :end_date_time, class: 'form-control' %>
-      <span class="input-group-addon">
-       <span class="fa fa-calendar"></span>
-     </span>
-   </div>
- </p>
- <p>
-   <%= f.label :important_status, "STATUS" %>
-   <%= f.select :important_status, Task.important_statuses.keys, {prompt: '選択してください'} %>
- </p>
- <p>
-  <%= f.label :memo, "MEMO" %>
-  <%= f.text_area  :memo, id: "textarea" %>
-</p>
-<p>共有ボタン</p>
-<p><%= f.submit "登録"%></p>
+     <%= f.label :important_status, "STATUS" %>
+     <%= f.select :important_status, Task.important_statuses.keys, {prompt: '選択してください'} %>
+   </p>
+   <p>
+    <%= f.label :memo, "MEMO" %>
+    <%= f.text_area  :memo, id: "textarea" %>
+  </p>
+  <p><%= f.submit "登録"%></p>
+</div>
+</div>
+</div>
 <% end %>
-</div>
-</div>
 <!-- 新規 -->
-
 
 
 <!-- Addボタン -->
 <div class="form-block">
-  <span class="add" title="Add">+</span>
+  <span class="add" title="Add">
+    +
+  </span>
 </div>
 
 
 <!-- テスト -->
-<h2>テスト</h2>
-<% @tasks.each do |task| %>
-<p>-------------------------</p>
-<p>ブックマークボタン</p>
-<p>タイトル<%= task.title %></p>
-<p>場所</p>
-<p>開始日時<%= task.start_date_time %></p>
-<p>終了日時<%= task.end_date_time %></p>
-<p>ステータス<%= task.important_status %></p>
-<p>メモ<%= task.memo %></p>
-<p>共有ボタン</p>
-<p>-------------------------</p>
-<% end %>
-
+<!-- <h2 class="test">テスト</h2>
+<div class="test">
+  <% @tasks.each do |task| %>
+  <p>-------------------------</p>
+  <p><%= render 'users/bookmarks/bookmark', task: task %></p>
+  <p>タイトル<%= task.title %></p>
+  <p>場所</p>
+  <p>開始日時<%= task.start_date_time %></p>
+  <p>終了日時<%= task.end_date_time %></p>
+  <p>ステータス<%= task.important_status %></p>
+  <p>メモ<%= task.memo %></p>
+  <p>共有ボタン</p>
+  <p>-------------------------</p>
+  <% end %>
+</div> -->
+<!-- テスト -->
 
 
 

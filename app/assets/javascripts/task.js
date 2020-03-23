@@ -59,13 +59,8 @@ $(function() {
   });
 
 });
-
 // 登録内容のモーダル
 $(function(){
-    // $('.js-modal-open').on('click',function(){
-    //     $('.js-modal').fadeIn();
-    //     return false;
-    // });
     gon.tasks.forEach(function( task ){
       console.log( task );
       $("#task-"+task['id']).on('click', function() {

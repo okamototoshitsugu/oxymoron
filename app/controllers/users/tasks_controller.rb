@@ -1,6 +1,7 @@
 class Users::TasksController < ApplicationController
 	def index
 		@tasks = Task.all
+		@tasks = Task.order("start_date_time")
 		@task = Task.new
 		@user = current_user
 		gon.tasks = @tasks
