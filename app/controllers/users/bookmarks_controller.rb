@@ -1,4 +1,10 @@
 class Users::BookmarksController < ApplicationController
+
+  def show
+    @user = User.find_by(id: params[:id])
+    @bookmarks = Bookmark.where(user_id: current_user.id)
+  end
+
   def create
     @task = Task.find(params[:task_id])
     bookmark = @task.bookmarks.new(user_id: current_user.id)

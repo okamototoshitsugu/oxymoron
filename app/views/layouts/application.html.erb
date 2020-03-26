@@ -27,9 +27,11 @@
           <p class= "h_text"><%= link_to "TASK_TREE", users_tasks_path(current_user.id) %></p>
           <p class= "h_text"><%= link_to "GRAPH", users_graph_path(current_user.id) %></p>
           <!-- URL変更 -->
-          <p class= "h_text"><%= link_to "BOOKMARK", users_graph_path(current_user.id) %></p>
+          <p class= "h_text"><%= link_to "BOOKMARK", users_task_bookmarks_path(current_user.id) %></p>
           <!-- <p class= "h_text"><%= link_to "SHARE", users_shares_path(current_user.id) %></p> -->
           <p class= "h_text"><%= link_to "LOG_OUT", destroy_user_session_path, method: :delete %></p>
+          <% elsif admin_signed_in? %>
+          <p class= "h_text"><%= link_to "LOG_OUT", destroy_admin_session_path, method: :delete %></p>
           <% else %>
           <p class= "h_text"><%= link_to "TOP", root_path %></p>
           <p class= "h_text"><%= link_to "ABOUT", homes_about_path %></p>

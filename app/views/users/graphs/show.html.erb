@@ -6,33 +6,33 @@
 			type: 'line',
 			data: {
 				// 1ヶ月ごとに自動更新
-				labels: ['Day1','Day2','Day3','Day4','Day5','Day6','Day7','Day8','Day9','Day10','Day11','Day12','Day13','Day14','Day15','Day17','Day18','Day19','Day20','Day21','Day22','Day23','Day24','Day25','Day26','Day27','Day28','Day29','Day30','Day31'],
+				labels: gon.month,
 				datasets: [
 				{
 					label: '1',
 					// ステータス１番のデータ
-					data: [0,1,2,5,5,7,8,14,20,],
+					data: gon.important_status_1,
 					borderColor: "#2196F3",
 					backgroundColor: "rgba(0,0,0,0)"
 				},
 				{
 					label: '2',
 					// ステータス２番のデータ
-					data: [0,1,5,5],
+					data: gon.important_status_2,
 					borderColor: "#009688",
 					backgroundColor: "rgba(0,0,0,0)"
 				},
 				{
 					label: '3',
 					// ステータス３番のデータ
-					data: [0,1,2,3],
+					data: gon.important_status_3,
 					borderColor: "#CDDC39",
 					backgroundColor: "rgba(0,0,0,0)"
 				},
 				{
 					label: '4',
 					// ステータス４番のデータ
-					data: [0,1,4,8],
+					data: gon.important_status_4,
 					borderColor: "#D50000",
 					backgroundColor: "rgba(0,0,0,0)"
 				}

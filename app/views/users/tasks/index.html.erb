@@ -2,7 +2,7 @@
 <% @tasks.each do |task| %>
 <div class="form-block">
   <!-- 中身 -->
-  <div class="bookmark">
+  <div class="bookmark" id="task_<%= task.id %>">
     <%= render 'users/bookmarks/bookmark', task: task %>
   </div>
   <div class="deletebutton-position">
@@ -12,17 +12,18 @@
       <% end %>
     </p>
   </div>
-  <h2 id="task-<%= task.id %>">
+
+  <div id="task-<%= task.id %>">
     <div class="task-leaf">
       <p><%= task.title %></p>
       <p><%= task.start_date_time %></p>
     </div>
-  </h2>
+  </div>
 </div>
 <div class="modal js_modal" id="modal-task-<%= task.id %>">
   <div class="modal__bg js_modal-close"></div>
   <div class="modal__content">
-    <div class="modal-bookmark">
+    <div class="modal-bookmark" id="task_<%= task.id %>">
       <%= render 'users/bookmarks/bookmark', task: task %>
     </div>
     <%= form_with model: task, url: "/users/tasks/#{task.id}" do |f| %>
@@ -32,24 +33,20 @@
         <%= f.text_field :title%>
       </p>
       <p>場所</p>
-      <p>
-        <%= f.label :start_date_time, "START" %>
-        <div class='input-group date datetimepicker'>
-          <%= f.text_field :start_date_time, class: 'form-control' %>
-          <span class="input-group-addon">
-           <span class="fa fa-calendar"></span>
-         </span>
-       </div>
-     </p>
-     <p>
-      <%= f.label :end_date_time, "FINISH" %>
+      <%= f.label :start_date_time, "START" %>
       <div class='input-group date datetimepicker'>
-        <%= f.text_field :end_date_time, class: 'form-control' %>
+        <%= f.text_field :start_date_time, class: 'form-control' %>
         <span class="input-group-addon">
          <span class="fa fa-calendar"></span>
        </span>
      </div>
-   </p>
+     <%= f.label :end_date_time, "FINISH" %>
+     <div class='input-group date datetimepicker'>
+      <%= f.text_field :end_date_time, class: 'form-control' %>
+      <span class="input-group-addon">
+       <span class="fa fa-calendar"></span>
+     </span>
+   </div>
    <p>
      <%= f.label :important_status, "STATUS" %>
      <%= f.select :important_status, Task.important_statuses.keys, {} %>
@@ -58,7 +55,7 @@
     <%= f.label :memo, "MEMO" %>
     <%= f.text_area  :memo, id: "textarea" %>
   </p>
-  <p><%= f.submit "登録"%></p>
+  <%= f.submit "登録"%>
   <% end %>
 </div>
 </div>
@@ -67,16 +64,16 @@
 <!-- 既存 -->
 
 <!-- 新規 -->
-<div class="form-block" id="form_block[0]">
+<div class="form-block" id="form_block[0]" style="display: none;">
   <!-- Closeボタン -->
   <span class="close" title="Close" style="display: none;">-</span>
 
   <!-- 中身 -->
-  <h2 class="js-modal-open">
+  <div class="js-modal-open">
     <div class="task-leaf">
       NEW
     </div>
-  </h2>
+  </div>
 
 </div>
 <div class="modal js-modal">
@@ -89,24 +86,20 @@
         <%= f.text_field :title%>
       </p>
       <p>場所</p>
-      <p>
-        <%= f.label :start_date_time, "START" %>
-        <div class='input-group date datetimepicker'>
-          <%= f.text_field :start_date_time, class: 'form-control' %>
-          <span class="input-group-addon">
-           <span class="fa fa-calendar"></span>
-         </span>
-       </div>
-     </p>
-     <p>
-      <%= f.label :end_date_time, "FINISH" %>
+      <%= f.label :start_date_time, "START" %>
       <div class='input-group date datetimepicker'>
-        <%= f.text_field :end_date_time, class: 'form-control' %>
+        <%= f.text_field :start_date_time, class: 'form-control' %>
         <span class="input-group-addon">
          <span class="fa fa-calendar"></span>
        </span>
      </div>
-   </p>
+     <%= f.label :end_date_time, "FINISH" %>
+     <div class='input-group date datetimepicker'>
+      <%= f.text_field :end_date_time, class: 'form-control' %>
+      <span class="input-group-addon">
+       <span class="fa fa-calendar"></span>
+     </span>
+   </div>
    <p>
      <%= f.label :important_status, "STATUS" %>
      <%= f.select :important_status, Task.important_statuses.keys, {prompt: '選択してください'} %>
@@ -115,7 +108,7 @@
     <%= f.label :memo, "MEMO" %>
     <%= f.text_area  :memo, id: "textarea" %>
   </p>
-  <p><%= f.submit "登録"%></p>
+  <%= f.submit "登録"%>
 </div>
 </div>
 </div>
@@ -134,18 +127,18 @@
 <!-- テスト -->
 <!-- <h2 class="test">テスト</h2>
 <div class="test">
-  <% @tasks.each do |task| %>
+  <%# @tasks.each do |task| %>
   <p>-------------------------</p>
-  <p><%= render 'users/bookmarks/bookmark', task: task %></p>
-  <p>タイトル<%= task.title %></p>
+  <p><%#= render 'users/bookmarks/bookmark', task: task %></p>
+  <p>タイトル<%#= task.title %></p>
   <p>場所</p>
-  <p>開始日時<%= task.start_date_time %></p>
-  <p>終了日時<%= task.end_date_time %></p>
-  <p>ステータス<%= task.important_status %></p>
-  <p>メモ<%= task.memo %></p>
+  <p>開始日時<%#= task.start_date_time %></p>
+  <p>終了日時<%#= task.end_date_time %></p>
+  <p>ステータス<%#= task.important_status %></p>
+  <p>メモ<%#= task.memo %></p>
   <p>共有ボタン</p>
   <p>-------------------------</p>
-  <% end %>
+  <%# end %>
 </div> -->
 <!-- テスト -->
 

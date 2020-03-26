@@ -1,5 +1,5 @@
 if (location.pathname == '/tasks') {
-  $(".task_<%= @task.id %>").html("<%= j(render 'users/bookmarks/bookmark',  task: task ) %>")
+  $("#task_<%= @task.id %>").html("<%= j(render 'users/bookmarks/bookmark',  task: @task ) %>")
 } else {
-  $(".task_<%= @task.id %>").html("<%= j(render 'users/bookmarks/detail',  task: task ) %>")
+  $("#task_<%= @task.id %>").html("<%= j(render 'users/bookmarks/bookmark',  task: @task ) %>")
 }

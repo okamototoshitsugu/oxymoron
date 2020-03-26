@@ -1,0 +1,23 @@
+<table align="center">
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Location</th>
+			<th>Start</th>
+			<th>End</th>
+			<th>Memo</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @bookmarks.each do |bookmark| %>
+		<% task = Task.find_by(id: bookmark.task_id) %>
+		<tr>
+			<td><%= task.title %></td>
+			<th>Location</th>
+			<td><%= task.start_date_time %></td>
+			<td><%= task.end_date_time %></td>
+			<td><%= task.memo %></td>
+			<% end %>
+		</tr>
+	</tbody>
+</table>
