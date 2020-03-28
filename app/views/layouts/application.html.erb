@@ -6,38 +6,43 @@
   <%= csp_meta_tag %>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= include_gon %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
   <script src="https://kit.fontawesome.com/82c3077383.js" crossorigin="anonymous"></script>
 </head>
 
-<header>
-  <div id="nav-drawer">
-    <input id="nav-input" type="checkbox" class="nav-unshown">
-    <label id="nav-open" for="nav-input"><span></span></label>
-    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-    <div id="nav-content">
-      <div class= "h_menu">
-        <% if user_signed_in? %>
-        <p class= "h_text"><%= link_to "MY_PAGE", users_user_path(current_user.id) %></p>
-        <p class= "h_text"><%= link_to "TASK_TREE", users_task_trees_path(current_user.id) %></p>
-        <p class= "h_text"><%= link_to "GRAPH", users_graph_path(current_user.id) %></p>
-        <p class= "h_text"><%= link_to "BOOKMARK", users_bookmark_index_path(current_user.id) %></p>
-        <p class= "h_text"><%= link_to "SHARE", users_shares_path(current_user.id) %></p>
-        <p class= "h_text"><%= link_to "LOG_OUT", destroy_user_session_path, method: :delete %></p>
-        <% else %>
-        <p class= "h_text"><%= link_to "TOP", root_path %></p>
-        <p class= "h_text"><%= link_to "ABOUT", homes_about_path %></p>
-        <p class= "h_text"><%= link_to "LOG_IN", new_user_session_path %></p>
-        <p class= "h_text"><%= link_to "SIGN_UP", new_user_registration_path %></p>
-      </div>
-    </div>
-    <% end %>
-  </div>
-</header>
-
 <body>
+  <header>
+    <div id="nav-drawer">
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content">
+        <div class= "h_menu">
+          <% if user_signed_in? %>
+          <p class= "h_text"><%= link_to "MY_PAGE", users_user_path(current_user.id) %></p>
+          <p class= "h_text"><%= link_to "TASK_TREE", users_tasks_path(current_user.id) %></p>
+          <p class= "h_text"><%= link_to "GRAPH", users_graph_path(current_user.id) %></p>
+          <!-- URL変更 -->
+          <p class= "h_text"><%= link_to "BOOKMARK", users_task_bookmarks_path(current_user.id) %></p>
+          <!-- <p class= "h_text"><%= link_to "SHARE", users_shares_path(current_user.id) %></p> -->
+          <p class= "h_text"><%= link_to "LOG_OUT", destroy_user_session_path, method: :delete %></p>
+          <% elsif admin_signed_in? %>
+          <p class= "h_text"><%= link_to "LOG_OUT", destroy_admin_session_path, method: :delete %></p>
+          <% else %>
+          <p class= "h_text"><%= link_to "TOP", root_path %></p>
+          <p class= "h_text"><%= link_to "ABOUT", homes_about_path %></p>
+          <p class= "h_text"><%= link_to "LOG_IN", new_user_session_path %></p>
+          <p class= "h_text"><%= link_to "SIGN_UP", new_user_registration_path %></p>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </header>
+
   <%= yield %>
 </body>
 

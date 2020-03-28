@@ -12,5 +12,31 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
+//= require jquery
+//= require jquery_ujs
+//= require moment
+//= require moment/ja.js
+//= require bootstrap-datetimepicker
+//=require_self
 //= require_tree .
+
+
+// HTML CSS JSResult
+// EDIT ON
+// function addSticky() {
+//   $('.slide').each(function() {
+//     var scrollerAnchor = $(this).offset().top;
+//     if (window.scrollY >= scrollerAnchor) {
+//       $(this).addClass('fix-it');
+//     } else {
+//       $(this).removeClass('fix-it');
+//     }
+//   });
+// }
+
+// $(window).scroll(function() {
+//   addSticky();
+// });
+
+
+// Resources1×0.5×0.25×Rerun
