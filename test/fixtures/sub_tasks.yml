@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  memo: MyString
+  important_status: 1
+  title: MyString
+  user_id: 1
+  start_date_time: 2020-03-28 05:59:11
+  end_date_time: 2020-03-28 05:59:11
+
+two:
+  memo: MyString
+  important_status: 1
+  title: MyString
+  user_id: 1
+  start_date_time: 2020-03-28 05:59:11
+  end_date_time: 2020-03-28 05:59:11

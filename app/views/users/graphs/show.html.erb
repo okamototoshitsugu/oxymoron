@@ -1,1 +1,65 @@
-<h1>グラフ</h1>
+<div style="position:fixed; margin-top:200px; top:50%; left:50%; transform:translate(-50%,-50%); width:1000px; height:1000px;">
+	<canvas id="myImportantChart"></canvas>
+	<script>
+		var ctx = document.getElementById("myImportantChart");
+		var myImportantChart = new Chart(ctx, {
+			type: 'line',
+			data: {
+				// 1ヶ月ごとに自動更新
+				labels: gon.month,
+				datasets: [
+				{
+					label: '重要×緊急',
+					spanGaps: true,
+					// ステータス１番のデータ
+					data: gon.important_status_1,
+					borderColor: "#2196F3",
+					backgroundColor: "rgba(0,0,0,0)"
+				},
+				{
+					label: '重要×緊急ではない',
+					spanGaps: true,
+					// ステータス２番のデータ
+					data: gon.important_status_2,
+					borderColor: "#009688",
+					backgroundColor: "rgba(0,0,0,0)"
+				},
+				{
+					label: '重要ではない×緊急',
+					spanGaps: true,
+					// ステータス３番のデータ
+					data: gon.important_status_3,
+					borderColor: "#CDDC39",
+					backgroundColor: "rgba(0,0,0,0)"
+				},
+				{
+					label: '重要でも緊急でもない',
+					spanGaps: true,
+					// ステータス４番のデータ
+					data: gon.important_status_4,
+					borderColor: "#D50000",
+					backgroundColor: "rgba(0,0,0,0)"
+				}
+				],
+			},
+			options: {
+				title: {
+					display: true,
+					text: ''
+				},
+				scales: {
+					yAxes: [{
+						ticks: {
+							suggestedMax: 50,
+							suggestedMin: 0,
+							stepSize: 5,
+							callback: function(value, index, values){
+								return  value +  'tasks'
+							}
+						}
+					}]
+				},
+			}
+		});
+	</script>
+</div>

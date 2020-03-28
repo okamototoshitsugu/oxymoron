@@ -10,7 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_11_095910) do
+ActiveRecord::Schema.define(version: 2020_03_28_170743) do
+
+  create_table "admins", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_admins_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
+  end
+
+  create_table "bookmarks", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "task_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["task_id"], name: "index_bookmarks_on_task_id"
+    t.index ["user_id"], name: "index_bookmarks_on_user_id"
+  end
 
   create_table "graphs", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -22,21 +44,32 @@ ActiveRecord::Schema.define(version: 2020_03_11_095910) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "task_leafs", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "sub_tasks", force: :cascade do |t|
     t.string "memo"
-    t.integer "bookmark_status"
     t.integer "important_status"
-    t.integer "share"
+    t.string "title"
+    t.integer "user_id"
+    t.integer "task_id"
     t.datetime "start_date_time"
     t.datetime "end_date_time"
-  end
-
-  create_table "task_trees", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "location"
+    t.index ["task_id"], name: "index_sub_tasks_on_task_id"
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.string "memo"
+    t.integer "important_status", default: 0, null: false
+    t.integer "share"
     t.string "title"
+    t.integer "user_id"
+    t.datetime "start_date_time"
+    t.datetime "end_date_time"
+    t.integer "graphs_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "location"
   end
 
   create_table "users", force: :cascade do |t|

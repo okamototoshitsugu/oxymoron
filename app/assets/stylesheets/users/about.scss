@@ -1,0 +1,36 @@
+.slide {
+ height: 150vh;
+}
+.slide1 {
+  background-color: #fff;
+  background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+  linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+}
+
+.fix-it {
+ background-attachment: fixed;
+
+}
+.about-title {
+	text-align: center;
+	margin-top: 30px;
+	font-size: 80px
+}
+.about-sub-title {
+	text-align: center;
+}
+.about-text {
+	text-align: center;
+}
+.update-schedule {
+  text-align: center;
+  margin-top: 100px;
+}
+.notice {
+  text-align: center;
+  margin-top: 100px;
+}
+li {
+  list-style: none;
+}
