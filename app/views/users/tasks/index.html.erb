@@ -1,7 +1,7 @@
 <!-- 既存 -->
 <% @tasks.each do |task| %>
 <div class="form-block">
-  <!-- 中身 -->
+  <!-- task-中身 -->
   <div class="bookmark" id="task_<%= task.id %>">
     <%= render 'users/bookmarks/bookmark', task: task %>
   </div>
@@ -12,35 +12,56 @@
       <% end %>
     </p>
   </div>
+  <div class="js--modal-open" data-id="<%= task.id  %>">
+    <div class="plusbutton-position">
+      <p id="plusbutton">
+        <i class="fas fa-plus"></i>
+      </p>
+    </div>
+  </div>
+  <% unless task.sub_tasks.empty? %>
+  <!-- <button class="sub_task_open" data-id="<%= task.id %>">さぶたすくの表示</button> -->
+  <div class="openbutton-position">
+    <p id="openbutton">
+      <i class="fas fa-angle-double-down sub_task_open" data-id="<%= task.id %>"></i>
+    </div>
+  </p>
+  <% end %>
 
   <div id="task-<%= task.id %>">
     <div class="task-leaf">
       <p><%= task.title %></p>
+      <p><%= task.location %></p>
       <p><%= task.start_date_time %></p>
     </div>
   </div>
 </div>
+
+
 <div class="modal js_modal" id="modal-task-<%= task.id %>">
   <div class="modal__bg js_modal-close"></div>
   <div class="modal__content">
     <div class="modal-bookmark" id="task_<%= task.id %>">
       <%= render 'users/bookmarks/bookmark', task: task %>
     </div>
-    <%= form_with model: task, url: "/users/tasks/#{task.id}" do |f| %>
+    <%= form_with model: task, url: "/users/tasks/#{task.id}",local: true do |f| %>
     <div class="modal-content">
       <p>
-        <%= f.label :title, "TITLE" %>
+        <%= f.label :title, "Title" %>
         <%= f.text_field :title%>
       </p>
-      <p>場所</p>
-      <%= f.label :start_date_time, "START" %>
+      <p>
+        <%= f.label :location, "Location" %>
+        <%= f.text_field :location %>
+      </p>
+      <%= f.label :start_date_time, "Start" %>
       <div class='input-group date datetimepicker'>
         <%= f.text_field :start_date_time, class: 'form-control' %>
         <span class="input-group-addon">
          <span class="fa fa-calendar"></span>
        </span>
      </div>
-     <%= f.label :end_date_time, "FINISH" %>
+     <%= f.label :end_date_time, "Finish" %>
      <div class='input-group date datetimepicker'>
       <%= f.text_field :end_date_time, class: 'form-control' %>
       <span class="input-group-addon">
@@ -48,18 +69,86 @@
      </span>
    </div>
    <p>
-     <%= f.label :important_status, "STATUS" %>
+     <%= f.label :important_status, "Status" %>
      <%= f.select :important_status, Task.important_statuses.keys, {} %>
    </p>
    <p>
-    <%= f.label :memo, "MEMO" %>
-    <%= f.text_area  :memo, id: "textarea" %>
+    <%= f.label :memo, "Memo" %>
+    <%= f.text_area  :memo %>
   </p>
-  <%= f.submit "登録"%>
+  <%= f.submit "登録", class: "task-submit"%>
   <% end %>
 </div>
 </div>
 </div>
+
+<div id="sub_tasks_<%= task.id %>" class="sub_tasks_container" style="display: none;">
+  <!-- sub-task-中身 -->
+  <% task.sub_tasks.each do |sub_task| %>
+  <div class="form--block">
+    <div class="deletebutton-position-2">
+      <p id="deletebutton-2">
+        <%= link_to users_sub_task_path(sub_task), data: { confirm: "削除しますか？" }, method: :delete do %>
+        <i class="fas fa-minus"></i>
+        <% end %>
+      </p>
+    </div>
+
+    <div id="sub-task-<%= sub_task.id %>" class="">
+      <div class="task-leaf" data-id="<%= sub_task.id %>">
+        <p><%= sub_task.title %></p>
+        <p><%= sub_task.location %></p>
+        <p><%= sub_task.start_date_time %></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal js__modal sub_task_modal" id="modal_sub_task-<%= sub_task.id %>">
+    <div class="modal__bg js__modal-close"></div>
+    <div class="modal__content">
+      <%= form_with model: sub_task, url: "/users/sub_tasks/#{sub_task.id}", local: true do |f| %>
+      <div class="modal-content">
+        <p>
+          <%= f.label :title, "Title" %>
+          <%= f.text_field :title%>
+        </p>
+        <p>
+          <%= f.label :location, "Location" %>
+          <%= f.text_field :location %>
+        </p>
+        <%= f.label :start_date_time, "Start" %>
+        <div class='input-group date datetimepicker'>
+          <%= f.text_field :start_date_time, class: 'form-control' %>
+          <span class="input-group-addon">
+            <span class="fa fa-calendar"></span>
+          </span>
+        </div>
+        <%= f.label :end_date_time, "Finish" %>
+        <div class='input-group date datetimepicker'>
+          <%= f.text_field :end_date_time, class: 'form-control' %>
+          <span class="input-group-addon">
+            <span class="fa fa-calendar"></span>
+          </span>
+        </div>
+        <p>
+          <%= f.label :important_status, "Status" %>
+          <%= f.select :important_status, Task.important_statuses.keys, {} %>
+        </p>
+        <p>
+          <%= f.label :memo, "Memo" %>
+          <%= f.text_area  :memo %>
+        </p>
+        <%= f.submit "登録", class: "task-submit"%>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
+  <% end %>
+</div>
+
+
+
 <% end %>
 <!-- 既存 -->
 
@@ -82,18 +171,21 @@
     <%= form_for(@task,url: users_tasks_path, method: :post) do |f| %>
     <div class="modal-content">
       <p>
-        <%= f.label :title, "TITLE" %>
-        <%= f.text_field :title%>
+        <%= f.label :title, "Title" %>
+        <%= f.text_field :title %>
       </p>
-      <p>場所</p>
-      <%= f.label :start_date_time, "START" %>
+      <p>
+        <%= f.label :location, "Location" %>
+        <%= f.text_field :location %>
+      </p>
+      <%= f.label :start_date_time, "Start" %>
       <div class='input-group date datetimepicker'>
         <%= f.text_field :start_date_time, class: 'form-control' %>
         <span class="input-group-addon">
          <span class="fa fa-calendar"></span>
        </span>
      </div>
-     <%= f.label :end_date_time, "FINISH" %>
+     <%= f.label :end_date_time, "Finish" %>
      <div class='input-group date datetimepicker'>
       <%= f.text_field :end_date_time, class: 'form-control' %>
       <span class="input-group-addon">
@@ -101,14 +193,70 @@
      </span>
    </div>
    <p>
-     <%= f.label :important_status, "STATUS" %>
+     <%= f.label :important_status, "Status" %>
      <%= f.select :important_status, Task.important_statuses.keys, {prompt: '選択してください'} %>
    </p>
    <p>
-    <%= f.label :memo, "MEMO" %>
-    <%= f.text_area  :memo, id: "textarea" %>
+    <%= f.label :memo, "Memo" %>
+    <%= f.text_area  :memo %>
   </p>
-  <%= f.submit "登録"%>
+  <%= f.submit "登録", class: "task-submit"%>
+</div>
+</div>
+</div>
+<% end %>
+<!-- 新規 -->
+
+<!-- sub-新規 -->
+<div class="form--block" id="form__block[0]" style="display: none;">
+  <!-- Closeボタン -->
+  <span class="close-2" title="Close-2" style="display: none;">-</span>
+
+  <!-- 中身 -->
+  <div class="js--modal-open">
+    <div class="task-leaf">
+      NEW
+    </div>
+  </div>
+
+</div>
+<div class="modal js--modal">
+  <div class="modal__bg js__modal-close"></div>
+  <div class="modal__content">
+    <%= form_for(@sub_task ,url: users_sub_tasks_path, method: :post) do |f| %>
+    <%= f.hidden_field :task_id %>
+    <div class="modal-content">
+      <p>
+        <%= f.label :title, "Title" %>
+        <%= f.text_field :title%>
+      </p>
+      <p>
+        <%= f.label :location, "Location" %>
+        <%= f.text_field :location %>
+      </p>
+      <%= f.label :start_date_time, "Start" %>
+      <div class='input-group date datetimepicker'>
+        <%= f.text_field :start_date_time, class: 'form-control' %>
+        <span class="input-group-addon">
+         <span class="fa fa-calendar"></span>
+       </span>
+     </div>
+     <%= f.label :end_date_time, "Finish" %>
+     <div class='input-group date datetimepicker'>
+      <%= f.text_field :end_date_time, class: 'form-control' %>
+      <span class="input-group-addon">
+       <span class="fa fa-calendar"></span>
+     </span>
+   </div>
+   <p>
+     <%= f.label :important_status, "Status" %>
+     <%= f.select :important_status, Task.important_statuses.keys, {prompt: '選択してください'} %>
+   </p>
+   <p>
+    <%= f.label :memo, "Memo" %>
+    <%= f.text_area  :memo %>
+  </p>
+  <%= f.submit "登録", class: "task-submit"%>
 </div>
 </div>
 </div>
@@ -116,7 +264,7 @@
 <!-- 新規 -->
 
 
-<!-- Addボタン -->
+<!-- task-Addボタン -->
 <div class="form-block">
   <span class="add" title="Add">
     +
@@ -124,27 +272,212 @@
 </div>
 
 
-<!-- テスト -->
-<!-- <h2 class="test">テスト</h2>
-<div class="test">
-  <%# @tasks.each do |task| %>
-  <p>-------------------------</p>
-  <p><%#= render 'users/bookmarks/bookmark', task: task %></p>
-  <p>タイトル<%#= task.title %></p>
-  <p>場所</p>
-  <p>開始日時<%#= task.start_date_time %></p>
-  <p>終了日時<%#= task.end_date_time %></p>
-  <p>ステータス<%#= task.important_status %></p>
-  <p>メモ<%#= task.memo %></p>
-  <p>共有ボタン</p>
-  <p>-------------------------</p>
-  <%# end %>
-</div> -->
-<!-- テスト -->
+<script>
+//task
+$(function() {
+  // フォームカウント
+  var frm_cnt = 0;
+
+  // clone object
+  $(document).on('click', 'span.add', function() {
+    var original = $('#form_block\\[' + frm_cnt + '\\]');
+    var originCnt = frm_cnt;
+
+    frm_cnt++;
+
+    original
+    .clone(true)
+    .hide()
+    .insertAfter(original)
+      .attr('id', 'form_block[' + frm_cnt + ']') // クローンのid属性を変更。
+      .end() // 一度適用する
+      .find('input, textarea').each(function(idx, obj) {
+        $(obj).attr({
+          id: $(obj).attr('id').replace(/\[[0-9]\]+$/, '[' + frm_cnt + ']'),
+          name: $(obj).attr('name').replace(/\[[0-9]\]+$/, '[' + frm_cnt + ']')
+        });
+        $(obj).val('');
+      });
+
+    // clone取得
+    var clone = $('#form_block\\[' + frm_cnt + '\\]');
+    clone.children('span.close').show();
+    clone.slideDown('slow');
+  });
+
+  // close object
+  $(document).on('click', 'span.close', function() {
+    var removeObj = $(this).parent();
+    removeObj.fadeOut('fast', function() {
+      removeObj.remove();
+      // 番号振り直し
+      frm_cnt = 0;
+      $(".form-block[id^='form_block']").each(function(index, formObj) {
+        if ($(formObj).attr('id') != 'form_block[0]') {
+          frm_cnt++;
+          $(formObj)
+            .attr('id', 'form_block[' + frm_cnt + ']') // id属性を変更。
+            .find('input, textarea').each(function(idx, obj) {
+              $(obj).attr({
+                id: $(obj).attr('id').replace(/\[[0-9]\]+$/, '[' + frm_cnt + ']'),
+                name: $(obj).attr('name').replace(/\[[0-9]\]+$/, '[' + frm_cnt + ']')
+              });
+            });
+          }
+        });
+    });
+  });
+});
+
+// 登録内容のモーダル
+$(function(){
+  gon.tasks.forEach(function( task ){
+    console.log( task );
+    $("#task-"+task['id']).on('click', function() {
+    var btnIndex = task.id; // 何番目のモーダルボタンかを取得
+    // console.log(btnIndex)
+
+    $("#modal-task-"+btnIndex).fadeIn(); // クリックしたモーダルボタンと同じ番目のモーダルを表示する
+  });
+    $('.js_modal-close').on('click',function(){
+      $('.js_modal').fadeOut();
+      return false;
+    });
+  })
+});
+// 新規登録のモーダル
+$(function(){
+  　 $('.js-modal-open').on('click',function(){
+    $('.js-modal').fadeIn();
+    return false;
+  });
+  $('.js-modal-close').on('click',function(){
+    $('.js-modal').fadeOut();
+    return false;
+  });
+})
+//task
 
 
+//sub_task
+
+$(function() {
+  // フォームカウント
+  var frm_cnt = 0;
+
+  // clone object
+  $(document).on('click', 'span.add-2', function() {
+    var original = $('#form__block\\[' + frm_cnt + '\\]');
+    var originCnt = frm_cnt;
+
+    frm_cnt++;
+
+    original
+    .clone(true)
+    .hide()
+    .insertAfter(original)
+      .attr('id', 'form__block[' + frm_cnt + ']') // クローンのid属性を変更。
+      .end() // 一度適用する
+      .find('input, textarea').each(function(idx, obj) {
+        $(obj).attr({
+          id: $(obj).attr('id').replace(/\[[0-9]\]+$/, '[' + frm_cnt + ']'),
+          name: $(obj).attr('name').replace(/\[[0-9]\]+$/, '[' + frm_cnt + ']')
+        });
+        $(obj).val('');
+      });
+
+    // clone取得
+    var clone = $('#form__block\\[' + frm_cnt + '\\]');
+    clone.children('span.close').show();
+    clone.slideDown('slow');
+  });
+
+  // close object
+  $(document).on('click', 'span.close-2', function() {
+    var removeObj = $(this).parent();
+    removeObj.fadeOut('fast', function() {
+      removeObj.remove();
+      // 番号振り直し
+      frm_cnt = 0;
+      $(".form--block[id^='form__block']").each(function(index, formObj) {
+        if ($(formObj).attr('id') != 'form_block[0]') {
+          frm_cnt++;
+          $(formObj)
+            .attr('id', 'form__block[' + frm_cnt + ']') // id属性を変更。
+            .find('input, textarea').each(function(idx, obj) {
+              $(obj).attr({
+                id: $(obj).attr('id').replace(/\[[0-9]\]+$/, '[' + frm_cnt + ']'),
+                name: $(obj).attr('name').replace(/\[[0-9]\]+$/, '[' + frm_cnt + ']')
+              });
+            });
+          }
+        });
+    });
+  });
+});
+
+// 登録内容のモーダル
+/*$(function(){
+  gon.tasks.forEach(function( task ){
+    //onsole.log( task );
+    $("#task-"+sub_task['id']).on('click', function() {
+      var btnIndex = sub_task.id; // 何番目のモーダルボタンかを取得
+      // console.log(btnIndex)
+      $("#modal-task-"+btnIndex).fadeIn(); // クリックしたモーダルボタンと同じ番目のモーダルを表示する
+    });
+    $('.js__modal-close').on('click',function(){
+      $('.js__modal').fadeOut();
+      return false;
+    });
+  })
+});*/
+// 新規登録のモーダル
+$(function(){
+  $('.js--modal-open').on('click',function(){
+    $('#sub_task_task_id').val($(this).data('id'))
+    $('.js--modal').fadeIn();
+    return false;
+  });
+  $('.js__modal-close').on('click',function(){
+    $('.js__modal').fadeOut();
+    return false;
+  });
+
+  $('.task-leaf').click(function () {
+    console.log($(this));
+    $(this).parents('.sub_tasks_container').find('#modal_sub_task-' + $(this).data('id')).fadeIn();
+  });
+})
+
+$(function(){
+  $('.js__modal-close').on('click',function(){
+    $('.js--modal').fadeOut();
+    return false;
+  });
+})
+//sub_task
 
 
+// カレンダー
+$(function(){
+  $('.datetimepicker').datetimepicker({
+    format : "YYYY/MM/DD HH:mm",
+    icons: {
+      time: "fa fa-clock-o",
+      date: "fa fa-calendar",
+      up: "fa fa-arrow-up",
+      down: "fa fa-arrow-down",
+      previous: "fa fa-arrow-left",
+      next: "fa fa-arrow-right"
+    }
+  });
+  $('.sub_task_open').click(function() {
+    $('#sub_tasks_' + $(this).data('id')).toggle();
+  })
+});
+
+
+</script>
 
 
 

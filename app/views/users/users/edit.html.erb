@@ -6,14 +6,14 @@
 	<div class="mypage-edit-box">
 		<%= form_for @user, url:users_user_path(@user.id), method: :patch do |f| %>
 		<div class="mypage-edit-box-item">
-			<%= f.label :MAME, "NAME" %>
+			<%= f.label :MAME, "Name" %>
 			<%= f.text_field :name %><br>
 		</div>
 		<div class="mypage-edit-box-item-2">
-			<%= f.label :EMAIL, "EMAIL" %>
+			<%= f.label :EMAIL, "E-mail" %>
 			<%= f.text_field :email %><br>
 		</div>
 	</div>
-	<%= f.submit "編集内容を保存する", class: "radius-pixel-30" %>
+	<%= f.submit "編集内容を保存する", class: "radius-pixel-30 mypage-edit-submit" %>
 	<% end %>
 </div>

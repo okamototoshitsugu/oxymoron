@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_25_050002) do
+ActiveRecord::Schema.define(version: 2020_03_28_170743) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -44,6 +44,20 @@ ActiveRecord::Schema.define(version: 2020_03_25_050002) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "sub_tasks", force: :cascade do |t|
+    t.string "memo"
+    t.integer "important_status"
+    t.string "title"
+    t.integer "user_id"
+    t.integer "task_id"
+    t.datetime "start_date_time"
+    t.datetime "end_date_time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "location"
+    t.index ["task_id"], name: "index_sub_tasks_on_task_id"
+  end
+
   create_table "tasks", force: :cascade do |t|
     t.string "memo"
     t.integer "important_status", default: 0, null: false
@@ -55,6 +69,7 @@ ActiveRecord::Schema.define(version: 2020_03_25_050002) do
     t.integer "graphs_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "location"
   end
 
   create_table "users", force: :cascade do |t|

@@ -5,6 +5,7 @@ class Users::TasksController < ApplicationController
 		@task = Task.new
 		@user = current_user
 		gon.tasks = @tasks
+		@sub_task = SubTask.new
 	end
 
 	def create
@@ -14,6 +15,7 @@ class Users::TasksController < ApplicationController
 		if @task.save
 			redirect_to users_tasks_path
 		else
+			flash[:notice] ="※※※タイトルを入力して下さい※※※"
 		end
 	end
 
@@ -35,6 +37,6 @@ class Users::TasksController < ApplicationController
 	end
 
 	def task_params
-		params.require(:task).permit(:title, :memo, :start_date_time, :end_date_time, :important_status)
+		params.require(:task).permit(:title, :memo, :start_date_time, :end_date_time, :important_status, :location)
 	end
 end

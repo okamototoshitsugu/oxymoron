@@ -13,7 +13,7 @@
 		<% task = Task.find_by(id: bookmark.task_id) %>
 		<tr>
 			<td><%= task.title %></td>
-			<th>Location</th>
+			<td>Location</td>
 			<td><%= task.start_date_time %></td>
 			<td><%= task.end_date_time %></td>
 			<td><%= task.memo %></td>

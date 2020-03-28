@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   	resources :tasks do
      resource :bookmarks, only: [:create, :destroy, :show]
     end
+    resources :sub_tasks, only: [:create, :destroy, :update, :edit]
   	resources :users, only: [:show, :edit, :update, :destroy, :withdraw]
   	resources :graphs, only: [:show]
   	resources :shares, only: [:index]

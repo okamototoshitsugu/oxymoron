@@ -9,28 +9,32 @@
 				labels: gon.month,
 				datasets: [
 				{
-					label: '1',
+					label: '重要×緊急',
+					spanGaps: true,
 					// ステータス１番のデータ
 					data: gon.important_status_1,
 					borderColor: "#2196F3",
 					backgroundColor: "rgba(0,0,0,0)"
 				},
 				{
-					label: '2',
+					label: '重要×緊急ではない',
+					spanGaps: true,
 					// ステータス２番のデータ
 					data: gon.important_status_2,
 					borderColor: "#009688",
 					backgroundColor: "rgba(0,0,0,0)"
 				},
 				{
-					label: '3',
+					label: '重要ではない×緊急',
+					spanGaps: true,
 					// ステータス３番のデータ
 					data: gon.important_status_3,
 					borderColor: "#CDDC39",
 					backgroundColor: "rgba(0,0,0,0)"
 				},
 				{
-					label: '4',
+					label: '重要でも緊急でもない',
+					spanGaps: true,
 					// ステータス４番のデータ
 					data: gon.important_status_4,
 					borderColor: "#D50000",

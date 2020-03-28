@@ -1,6 +1,8 @@
 class Task < ApplicationRecord
+	validates :title, presence: true
 	belongs_to :user
 	has_many :bookmarks
+	has_many :sub_tasks
 	def bookmark_by?(user)
 		bookmarks.where(user_id: user.id).exists?
 	end

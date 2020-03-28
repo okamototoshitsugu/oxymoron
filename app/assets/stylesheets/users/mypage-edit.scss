@@ -44,4 +44,17 @@
     height: 40px;
     font-size: 17px;
   }
+.mypage-edit-submit[type="submit"] {
+  border-style: none;
+  width: auto;
+  height: 31px;
+  background: linear-gradient(to bottom,#81D4FA,#03A9F4);
+  border-radius: 3px;
+  border: 1px #0288D1 solid;
+  color: #fff;
+}
 
+.mypage-edit-submit input[type="submit"]:hover {
+  cursor: pointer;
+  background: #03A9F4;
+}
