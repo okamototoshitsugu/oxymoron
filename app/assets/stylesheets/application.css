@@ -14,7 +14,7 @@
  *= require_self
  *= require_tree .
  */
-/* 
+/*
   Background gradients from lea.verou.me/css3patterns
   Background SVG from heropatterns.com
 */
@@ -23,7 +23,7 @@
  height: 100vh;
 }
 .slide1 {
-  background-color: #fff; 
+  background-color: #fff;
   background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
   linear-gradient(#eee .1em, transparent .1em);
   background-size: 100% 1.2em;
@@ -64,5 +64,4 @@
  }
 header {
   padding:10px;
-  background: ;
 }
