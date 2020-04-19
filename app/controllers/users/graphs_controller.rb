@@ -35,6 +35,7 @@ class Users::GraphsController < ApplicationController
 
 
 
+gon.month = (Date.current.beginning_of_month..Date.current.end_of_month).to_a
 
 
 
@@ -77,7 +78,6 @@ class Users::GraphsController < ApplicationController
 # gon.important_status_2 = result_2
 # gon.important_status_3 = result_3
 # gon.important_status_4 = result_4
-gon.month = (Date.current.beginning_of_month..Date.current.end_of_month).to_a
 	# 	@tasks = Task.where(important_status: 1,)
 	# 	p @tasks.count
 	# 	@tasks = Task.where(important_status: 2,)

@@ -1,11 +1,13 @@
 class Users::TasksController < ApplicationController
+	before_action :authenticate_user!,only: [:create,:edit,:update,:destroy,:index]
 	def index
 		@tasks = Task.all
 		@tasks = Task.order("start_date_time")
+		@tasks = current_user.tasks
 		@task = Task.new
+		@sub_task = SubTask.new
 		@user = current_user
 		gon.tasks = @tasks
-		@sub_task = SubTask.new
 	end
 
 	def create
@@ -25,8 +27,7 @@ class Users::TasksController < ApplicationController
 
 	def update
 		@task = Task.find(params[:id])
-
-		@task.update!(task_params)
+		@task.update(task_params)
 		redirect_to users_tasks_path
 	end
 
