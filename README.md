@@ -1,24 +1,28 @@
-# README
+# OKYMORON
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+<...>
 
-Things you may want to cover:
+### サイトテーマ
+<...>
 
-* Ruby version
+### テーマを選んだ理由
+<...>
 
-* System dependencies
+### ターゲットユーザ
+<...>
 
-* Configuration
+### 主な利用シーン
+<...>
 
-* Database creation
+## 設計書
 
-* Database initialization
+### 機能一覧
+<https://docs.google.com/spreadsheets/d/1UgK-6l38k5T81XjcTIn7CHnGRkB_sBXS5xQWAVhWmks/edit#gid=0>
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- 仮想環境：Vagrant,VirtualBox
