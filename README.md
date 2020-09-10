@@ -18,13 +18,14 @@ ToDoリスト
 
 ### 機能一覧
 <https://docs.google.com/spreadsheets/d/1UgK-6l38k5T81XjcTIn7CHnGRkB_sBXS5xQWAVhWmks/edit#gid=0>
-新規会員登録
-ログイン
-退会
-スケジュール登録
-スケジュール削除
-非同期ブックマーク
-グラフ
+1. 新規会員登録
+2. ログイン
+3. 退会
+4. スケジュール登録
+5. スケジュール削除
+6. 非同期通信
+7. ブックマーク
+8. グラフ
 
 ## 開発環境
 - OS：Linux(CentOS)
