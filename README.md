@@ -17,7 +17,6 @@ ToDoリスト
 日常的に
 
 ### 機能一覧
-<https://docs.google.com/spreadsheets/d/1UgK-6l38k5T81XjcTIn7CHnGRkB_sBXS5xQWAVhWmks/edit#gid=0>
 1. 新規会員登録
 2. ログイン
 3. 退会
