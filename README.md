@@ -1,7 +1,7 @@
 # OKYMORON
 
 ## サイト概要
-< ToDoリスト>
+ToDoリスト
 
 ### サイトテーマ
 予定を登録し。予定ごとに自己評価をし、1ヶ月毎に振り返る。
@@ -18,6 +18,13 @@
 
 ### 機能一覧
 <https://docs.google.com/spreadsheets/d/1UgK-6l38k5T81XjcTIn7CHnGRkB_sBXS5xQWAVhWmks/edit#gid=0>
+新規会員登録
+ログイン
+退会
+スケジュール登録
+スケジュール削除
+非同期ブックマーク
+グラフ
 
 ## 開発環境
 - OS：Linux(CentOS)
